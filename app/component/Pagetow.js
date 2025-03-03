@@ -92,7 +92,7 @@ const Pagetow = () => {
         <div className='backgroundimage section2' id="Techmap">
             <div className=' px-[24px] sm:px-[0] mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px]'>
                 <div className='startchallenge text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] text-center'>What is an ai agent?</div>
-                <p className='yourhavefoive text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] xl:px-[14%]     '>$MIND goes well beyond just being the best crypto presale in 2025. The MIND of Pepe ICO gives holders access to insights gathered by the AI Agent itself. Check out this video about AI agents and how MIND will rule the blockchain / AI crossover.</p>
+                <p className='yourhavefoive text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] xl:px-[14%]    pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] '>$MIND goes well beyond just being the best crypto presale in 2025. The MIND of Pepe ICO gives holders access to insights gathered by the AI Agent itself. Check out this video about AI agents and how MIND will rule the blockchain / AI crossover.</p>
                 <div className="scroll-container mt-[32px] sm:mt-[36px] md:mt-[40px] lg:mt-[48px] xl:mt-[64px] 2xl:mt-[72px]">
                     <div className="scroll-content gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px]">
                         {[...images, ...images].map((image, index) => (
