@@ -6,44 +6,13 @@ import { EffectCards,Autoplay,Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import Image from 'next/image';
 import image1 from './image/dff030388a8640ddfbc3e7588ae56077.gif';
-// import image12 from "./image12.png";
-// import image13 from "./image13.png";
-// import image14 from "./image14.png";
-// import image15 from "./image15.png";
-// import image16 from "./image16.png";
 
-// const images = [
-//     { src: image11, caption: "Image 11" },
-//     { src: image12, caption: "Image 12" },
-//     { src: image13, caption: "Image 13" },
-//     { src: image14, caption: "Image 14" },
-//     { src: image15, caption: "Image 15" },
-//     { src: image16, caption: "Image 16" },
-//     { src: image11, caption: "Image 11" },
-//     { src: image12, caption: "Image 12" },
-//     { src: image13, caption: "Image 13" },
-//     { src: image14, caption: "Image 14" },
-//     { src: image15, caption: "Image 15" },
-//     { src: image16, caption: "Image 16" },
-//     { src: image11, caption: "Image 11" },
-//     { src: image12, caption: "Image 12" },
-//     { src: image13, caption: "Image 13" },
-//     { src: image14, caption: "Image 14" },
-//     { src: image15, caption: "Image 15" },
-//     { src: image16, caption: "Image 16" },
-//     { src: image11, caption: "Image 11" },
-//     { src: image12, caption: "Image 12" },
-//     { src: image13, caption: "Image 13" },
-//     { src: image14, caption: "Image 14" },
-//     { src: image15, caption: "Image 15" },
-//     { src: image16, caption: "Image 16" },
-//   ];
 
 const Pagefive = () => {
     useEffect(() => {
         setTimeout(() => {
           document.querySelectorAll(".swiper-slide-shadow").forEach(el => el.remove());
-        }, 100); // Adjust the delay if necessary
+        }, 100);
       }, []);
 
       const sliderRef = useRef(null);
@@ -73,7 +42,7 @@ const Pagefive = () => {
                 <h3 className=' tokenmonygrop text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px]'>100.000.000</h3>
                 <div className='flex justify-center items-center sm:flex-row flex-col sm:gap-0 gap-[20px] pt-[40px] sm:pt-[60px] md:pt-[80px] lg:pt-[110px] xl:pt-[130px] 2xl:pt-[150px]'>
                   <div className='flex justify-center items-center flex-1'>
-                    <Image src={image1} className='h-full bg-lightgray bg-cover bg-no-repeat bg-center mix-blend-exclusion filter brightness-80 contrast-120 rounded-full'/>
+                    <Image src={image1} alt='loading' className='h-full bg-lightgray bg-cover bg-no-repeat bg-center mix-blend-exclusion filter brightness-80 contrast-120 rounded-full'/>
                   </div>
                   <div className='flex-1 '>
                     <svg className='w-full ' viewBox="0 0 618 27" fill="none" xmlns="http://www.w3.org/2000/svg">

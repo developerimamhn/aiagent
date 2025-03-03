@@ -37,7 +37,7 @@ const Pagethree = () => {
                 </div>
                 <div className='flex-1 section3'>
                     <div className='pr-[24px] sm:pr-[32px] md:pr-[36px] lg:pr-[40px] xl:pr-[48px] 2xl:pr-[52px]'>
-                    <Image className='w-full ' src={image12} />
+                    <Image className='w-full ' alt="imageloasding" src={image12} />
                     </div>
                 </div>
             </div>        
