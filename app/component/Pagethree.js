@@ -1,3 +1,6 @@
+'use client'
+
+
 import React,{useEffect} from 'react';
 import Image from 'next/image';
 // import image9 from './image9.png';
@@ -47,8 +50,11 @@ const Pagethree = () => {
             <div className='flex justify-center items-end sm:flex-row flex-col sm:gap-0 gap-[30px] pl-[50px] sm:pl-[70px] md:pl-[100px] lg:pl-[120px] xl:pl-[160px] 2xl:pl-[200x]'>
                 <div className='flex-1'>
                     <h2 className='section3 artfinalelonms text-[25px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px]'>Who is the Artificial Intelligence Elon on the Solana Blockchain?</h2>
-                    <p className='section3 elonmassdSD text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px]'>Elon has reshaped entire industries - but what if he's not just a human visionary? What if he's an extraterrestrial AI, sent to guide humanity into the future? <br/> From Tesla to SpaceX, Neuralink, and The Boring Company, Elon has introduced groundbreaking technologies that seem almost too advanced. His ability to tackle challenges that others deem impossible has led many to question: Could there be more to Elon than meets the eye? <br/> $EXTAI on the Solana blockchain explores the idea that Elon might not just be a genius entrepreneur, but a higher intelligence pushing humanity toward an extraordinary future - all with the speed and scalability of the Solana blockchain.</p>
-                    {/* <Image src={image13} alt="Background" className='filter brightness-88 mix-blend-overlay w-1/3' /> */}
+                    <p className='section3 elonmassdSD text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px]'><p><p>Elon has reshaped entire industries - but what if he&apos;s not just a human visionary? What if he&apos;s an extraterrestrial AI, sent to guide humanity into the future?</p>
+<p>From Tesla to SpaceX, Neuralink, and The Boring Company, Elon has introduced groundbreaking technologies that seem almost too advanced. His ability to tackle challenges that others deem impossible has led many to question: Could there be more to Elon than meets the eye?</p>
+<p><strong>$EXTAI</strong> on the Solana blockchain explores the idea that Elon might not just be a genius entrepreneur, but a higher intelligence pushing humanity toward an extraordinary future - all with the speed and scalability of the Solana blockchain.</p>
+</p>
+                    </p>
 
                 </div>
                 <div className='flex-1 section3 '>

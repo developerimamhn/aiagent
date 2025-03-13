@@ -1,8 +1,10 @@
-'use client'
-
+'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Chart from 'react-apexcharts';
+import dynamic from 'next/dynamic';
+
+// Dynamically import react-apexcharts (disable SSR)
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 const AnimatedSVG = () => {
   const chartRef = useRef(null);  // Create a ref for the chart
@@ -69,20 +71,23 @@ const AnimatedSVG = () => {
         threshold: 0.5,  // Trigger animation when 50% of the chart is visible
       }
     );
-    if (chartRef.current) {
-      observer.observe(chartRef.current);  // Observe the chart element
+
+    const chartNode = chartRef.current;  // Store the ref in a variable
+    if (chartNode) {
+      observer.observe(chartNode);  // Observe the chart element
     }
 
     return () => {
-      if (chartRef.current) {
-        observer.unobserve(chartRef.current);  // Clean up observer
+      if (chartNode) {
+        observer.unobserve(chartNode);  // Clean up observer
       }
     };
   }, []);
 
 
+
   return (
-    <div className='justify-center items-center relative flex flex-col sm:grid grid-cols-5 gap-[2px]'>
+    <div className='justify-center items-center relative flex flex-col sm:grid grid-cols-5 gap-[2px] pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[88px]'>
       <div className='flex itesm-end justify-end col-span-1'>
       <svg className='w-[150px] sm:w-[180px] lg:w-[200px] 2xl:w-[265px] sm:block hidden' viewBox="0 0 265 323" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20.5" cy="304.5" r="11.5" fill="#8361E5"/>
