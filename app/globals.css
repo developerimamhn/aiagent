@@ -71,6 +71,62 @@ body {
 
 
 @layer utilities{
+  .roadmapsectojn{
+    color: #2B2523;
+    text-align: center;
+    font-family: "Jersey 25";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 87.6px */
+    letter-spacing: 1.46px;
+  }
+  .buybuttonss{
+    color: var(--color-white-solid, #FFF);
+    text-align: center;
+    text-shadow: 0px 0px 0px #FFF;
+    font-family: "Jersey 25";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9px; /* 95% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--color-grey-28, #474747);
+    box-shadow: 0px 1.489px 4.466px 0px rgba(255, 255, 255, 0.22) inset, 0px 13.399px 12.952px -11.91px rgba(255, 255, 255, 0.59) inset, 0px -5.955px 2.531px -2.977px rgba(0, 0, 0, 0.59) inset, 0px -14.887px 13.101px -4.466px rgba(0, 0, 0, 0.29) inset;
+    transition: 0.5s;
+  }
+  .buybuttonss:hover{
+    background: linear-gradient(180deg, #FFF 0%, #FFE1D0 100%);
+    box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.22) inset, 0px 9px 8.7px -8px rgba(255, 255, 255, 0.59) inset, 0px -4px 1.7px -2px rgba(0, 0, 0, 0.59) inset;
+    color: var(--mindofpepe-com-black, #000);
+    text-align: center;
+    text-shadow: 0px 0px 0px #FFF;
+  }
+  .buybuttonssddd{
+    border-radius: 7px;
+    background: linear-gradient(180deg, #FFF 0%, #FFE1D0 100%);
+    box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.22) inset, 0px 9px 8.7px -8px rgba(255, 255, 255, 0.59) inset, 0px -4px 1.7px -2px rgba(0, 0, 0, 0.59) inset;
+    color: var(--mindofpepe-com-black, #000);
+    text-align: center;
+    text-shadow: 0px 0px 0px #FFF;
+    font-family: "Jersey 10";
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--font-size-19, 19px); /* 95% */
+    letter-spacing: var(--letter-spacing-0_5, 0.5px);
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  .buybuttonssddd:hover{
+    color: var(--color-white-solid, #FFF);
+    text-align: center;
+    text-shadow: 0px 0px 0px #FFF;
+    font-family: "Jersey 25";
+    font-style: normal;
+    text-transform: uppercase;
+    background: var(--color-grey-28, #474747);
+    box-shadow: 0px 1.489px 4.466px 0px rgba(255, 255, 255, 0.22) inset, 0px 13.399px 12.952px -11.91px rgba(255, 255, 255, 0.59) inset, 0px -5.955px 2.531px -2.977px rgba(0, 0, 0, 0.59) inset, 0px -14.887px 13.101px -4.466px rgba(0, 0, 0, 0.29) inset;
+    transition: 0.5s
+  }
   .Froggo-Logo{
     color: #FF5C00;
     text-shadow: 0px 0px 0px #FFF;
@@ -175,14 +231,12 @@ body {
     transition: 0.5s;
   }
   .borderlinisinsassing:hover{
-    border-radius: 7px;
     color: var(--mindofpepe-com-white, #FFF);
     text-align: center;
     text-shadow: 0px 0px 0px #FFF;
     font-family: "Jersey 10";
     font-style: normal;
     font-weight: 400;
-    line-height: 19px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     background: var(--color-grey-28, #474747) !important;
@@ -196,7 +250,7 @@ body {
     z-index: 1000;
     transition: background 0.4s ease, padding 0.4s ease;
     opacity: 0;
-    animation: slideUp 0.6s 2.4s ease forwards;
+    animation: slideUp 0.6s 0.4s ease forwards;
  }
 
   /* Background change when scrolled */
@@ -285,30 +339,29 @@ body {
     box-shadow: 0px 5.955px 47.639px 0px rgba(0, 0, 0, 0.50);
   }
   .buypadidnsectoin{
-    color: #FFF;
-    text-align: center;
-    font-family: "Jersey 10";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 54.19px */
-    text-transform: uppercase;
-  }
-  .timeing{
-    color: var(--mindofpepe-com-white, #FFF);
-    text-align: center;
-    font-family: var(--font-family-Font-2, "Jersey 10");
-    font-style: normal;
-    font-weight: var(--font-weight-400, 400);
-    line-height: 44.662px; /* 100% */
-  }
-  .dayingstyline{
-    color: var(--mindofpepe-com-white, #FFF);
+    color: var(--mindofpepe-com-black, #000);
     text-align: center;
     font-family: "Jersey 25";
     font-style: normal;
-    font-weight: var(--font-weight-400, 400);
-    line-height: 11.91px;
-    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: 0.48px;
+  }
+  .timeing{
+    color: var(--mindofpepe-com-black, #000);
+    font-family: "Jersey 25";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.96px;
+  }
+  .dayingstyline{
+    color: var(--color-grey-28, #474747);
+    font-family: "Jersey 25";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: 0.32px;
   }
   .ratingre{
     color: var(--mindofpepe-com-white, #FFF);
@@ -320,7 +373,7 @@ body {
     text-transform: uppercase;
   }
   .lineone{
-    border-radius: 16px;
+    border-radius: 6.372px;
     background: #000001;
     width: 100%;
     flex-shrink: 0;
@@ -330,13 +383,13 @@ body {
     background: var(--mindofpepe-com-white, #FFF);
   }
   .untilprice{
-    color: var(--mindofpepe-com-black, #000);
+    color: #FFF;
     text-align: center;
     font-family: "Jersey 25";
     font-style: normal;
     font-weight: 400;
-    line-height: 29.775px; /* 186.091% */
-    letter-spacing: 1.191px;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: 0.32px;
   }
   .countering{
     color: var(--mindofpepe-com-white, #FFF);
@@ -359,7 +412,6 @@ body {
     color: #000001;
     text-align: center;
     font-family: "Jersey 10";
-    font-size: 22px;
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
     line-height: 25.011px; /* 113.685% */
@@ -395,6 +447,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+  
 }
 
 
@@ -416,9 +469,14 @@ body {
   overflow: hidden; 
 }
 
+.scroll-contents {
+  display: flex;
+  animation: infinite-scroll 55s linear infinite; /* Adjust speed */
+  width: max-content;
+}
 .scroll-content {
   display: flex;
-  animation: infinite-scroll 60s linear infinite; /* Adjust speed */
+  animation: infinite-scroll 75s linear infinite; /* Adjust speed */
   width: max-content;
 }
 .startchallenge{
@@ -490,18 +548,25 @@ body {
 }
 
 .howtobue{
-  color: #FFF;
+  color: #000;
   text-align: center;
   font-family: "Jersey 25";
   font-style: normal;
   font-weight: 400;
-  line-height: 70.149px; /* 121.739% */
-  transform: rotate(3deg);
+  line-height: var(--line-height-55_2, 55.2px); /* 75.616% */
+  text-transform: uppercase;
 }
 
 .hwobysection{
-  border-radius: 40px;
+  border-radius: 24px;
   background: #202022;
+  box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+}
+
+.hwobysection:hover{
+  background: #fff;
+  box-shadow: 12px 12px 0px 0px rgba(255, 255, 255, 0.35);
 }
 
 .onetext{
@@ -512,6 +577,7 @@ body {
   font-weight: 400;
   line-height: 114.025px; /* 100% */
 }
+
 .getwallet{
   color: #FFF;
   text-align: center;
@@ -570,4 +636,71 @@ body {
   line-height: 120%; /* 31.2px */
   letter-spacing: 0.52px;
 }
+
+.svgcolokrchange{
+  border-radius: 9.37px;
+  background: #FFF;
+  box-shadow: 4px 4px 0px 0px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.svgcolokrchange:hover{
+  background: #FF5C00;
+}
+.extalyoull{
+  color: var(--mindofpepe-com-black, #000);
+  text-align: center;
+  font-family: "Jersey 25";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 32px */
+}
+.bueyextat{
+  color: var(--color-grey-15, #272727);
+  text-align: center;
+  font-family: "Jersey 25";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: 0.4px;
+}
+}
+
+
+
+@keyframes drawPath {
+  0% {
+    /* stroke-dasharray: 0, 1000; */
+    fill: transparent;
+  }
+  100% {
+    /* stroke-dasharray: 1000, 0; */
+    fill: #8361E5;
+
+  }
+}
+
+
+.path-2
+ {
+  /* stroke: #000; */
+  /* stroke-width: 0; */
+  fill: transparent; /* Start with transparent fill */
+  stroke-dasharray: 1000; /* Length of path, adjust accordingly */
+  stroke-dashoffset: 1000; /* Initially offset to hide path */
+  animation: drawPath 4s ease-in-out forwards; /* Apply animation */
+}
+
+.circle {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

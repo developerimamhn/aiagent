@@ -10,10 +10,10 @@ const Body = () => {
     return (
         <div>
             <Pageone/>
-            <Pagetow/>
             <Pagethree/>
             <Pagefive/>
             <Pagesix/>
+            <Pagetow/>
             <Pageseven/>
         </div>
     );

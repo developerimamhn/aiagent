@@ -8,6 +8,7 @@ import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
 import usimage from './image/us.png';
 import bnimage from './image/bn.png';
+import chimage from './image/ch.jpg';
 
 
 
@@ -82,7 +83,7 @@ const NavBar = () => {
   const options = [
     { image: usimage,},
     { image: bnimage,},
-    { image: usimage,},
+    { image: chimage,},
   ];
 
 
@@ -105,7 +106,7 @@ const NavBar = () => {
                         <LiaBarsSolid className='text-[#000] text-[25px] absolute' />
                     </div>
                 </div>
-                <Link href="*" className='Froggo-Logo text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>Extraterrestrial <br/> Artificial Intelligence </Link>
+                <Link href="/" className='Froggo-Logo text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>Extraterrestrial <br/> Artificial Intelligence </Link>
                 <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:right-0 sm:relative duration-1000 z-50 sm:opacity-100 flex justify-between items-start sm:items-center gap-[14px] md:gap-[16px] lg:gap-[18px] xl:gap-[20px] 2xl:gap-[22px] p-[8px] md:p-[12px] xl:p-[16px] sm:bg-transparent bg-[#fff] sm:flex-row flex-col p-[20px] sm:p-[0]
                     ${toggle ? 'right-[10]' :'right-[130%]' }
                     ${toggle ? 'opacity-100' : 'opacity-10'} 
@@ -113,7 +114,7 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#Home" onClick={(e) => handleScroll(e, "Home")}>
                     Home
                     </a>
-                    <a className="Link-manu-bar" href="#About " onClick={(e) => handleScroll(e, "About ")}>
+                    <a className="Link-manu-bar" href="#about " onClick={(e) => handleScroll(e, "About ")}>
                     About 
                     </a>
                     <a className="Link-manu-bar" href="#Techmap" onClick={(e) => handleScroll(e, "Techmap")}>
@@ -128,9 +129,9 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#FAQ" onClick={(e) => handleScroll(e, "FAQ")}>
                      FAQ
                     </a>
-                    <a className="Link-manu-bar" href="#Staking" onClick={(e) => handleScroll(e, "Staking")}>
-                     Staking
-                    </a>
+                    <Link className="Link-manu-bar" href="/staking">
+                        Staking
+                    </Link>
                     <a className="Link-manu-bar" href="#whitepaper" onClick={(e) => handleScroll(e, "whitepaper")}>
                     whitepaper
                     </a>

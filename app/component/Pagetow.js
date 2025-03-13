@@ -64,45 +64,75 @@ const Pagetow = () => {
 
 
         useEffect(() => {
-            let ctx = gsap.context(() => {
-              gsap.from(".section2", {
-                opacity: 0,
-                y: 250,
-                duration: 2,
-                ease: "power3.out",
-                scrollTrigger: {
-                  trigger: ".section2",
-                  start: "top 80%",
-                  end: "top 50%",
-                  scrub: 2,
-                  markers: false, // Set to true for debugging
-                },
-              });
+          const mm = gsap.matchMedia();
+      
+          mm.add("(min-width: 1024px)", () => {
+            // Desktop Animation
+            return gsap.from(".section2", {
+              opacity: 0,
+              y: 250,
+              duration: 2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section2",
+                start: "top 50%",
+                end: "top 30%",
+                scrub: 2,
+                markers: false,
+              },
             });
-        
-            // Refresh ScrollTrigger to detect changes
-            ScrollTrigger.refresh();
-        
-            return () => ctx.revert(); // Cleanup GSAP animations on unmount
-          }, []);
+          });
+      
+          mm.add("(max-width: 1023px)", () => {
+            // Tablet & Mobile Animation
+            return gsap.from(".section2", {
+              opacity: 0,
+              y: 100, // Less movement on small screens
+              duration: 1.5,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section2",
+                start: "top 75%", // Trigger later for better visibility
+                end: "top 50%",
+                scrub: 1,
+                markers: false,
+              },
+            });
+          });
+      
+          return () => mm.revert(); // Cleanup GSAP animations on unmount
+        }, []);
       
 
 
     return (
-        <div className='backgroundimage section2' id="Techmap">
-            <div className=' px-[24px] sm:px-[0] mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px]'>
-                <div className='startchallenge text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] text-center'>What is an ai agent?</div>
-                <p className='yourhavefoive text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] xl:px-[14%]    pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] '>$MIND goes well beyond just being the best crypto presale in 2025. The MIND of Pepe ICO gives holders access to insights gathered by the AI Agent itself. Check out this video about AI agents and how MIND will rule the blockchain / AI crossover.</p>
-                <div className="scroll-container mt-[32px] sm:mt-[36px] md:mt-[40px] lg:mt-[48px] xl:mt-[64px] 2xl:mt-[72px]">
-                    <div className="scroll-content gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px]">
-                        {[...images, ...images].map((image, index) => (
-                        <div key={index} className="flex flex-col items-center w-[170px] sm:w-[266px] ">
-                            <Image src={image.src} alt={image.caption} />
-                        </div>
-                        ))}
+        <div className='backgroundimage sm:section2 ' id="Techmap">
+            <div className='container mx-auto'>
+                <h1 className='roadmapsectojn text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[100px]'>$EXTAI Roadmap</h1>
+                <div className='grid grid-cols-2 justify-center items-center'>
+                    <div className='flex'>
+                      <div className='relative'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="522" height="306" viewBox="0 0 522 306" fill="none">
+                        <g filter="url(#filter0_d_1040_2055)">
+                          <path d="M0 40C0 17.9086 17.9086 0 40 0H452.177C474.269 0 492.177 17.9086 492.177 40V191.787C492.177 196.709 496.167 200.699 501.089 200.699C506.01 200.699 510 204.688 510 209.61V230.495C510 235.417 506.01 239.406 501.089 239.406C496.167 239.406 492.177 243.396 492.177 248.318V266.703C492.177 281.779 479.956 294 464.881 294H40C17.9086 294 0 276.091 0 254V40Z" fill="#202022"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_1040_2055" x="0" y="0" width="522" height="306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="12" dy="12"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1040_2055"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1040_2055" result="shape"/>
+                          </filter>
+                        </defs>
+                      </svg>
+                      <div className='absolute pl-[20px] sm:pl-[24px] md:pl-[32px] lg:pl-[36px] xl:pl-[40px] 2xl:pl-[44px]  pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[60px] pr-[24px] sm:pr-[32px] md:pr-[36px] lg:pr-[40px] xl:pr-[48px] 2xl:pr-[62px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[60px]'></div>
+                      </div>
                     </div>
+                    <div></div>
                 </div>
-                
             </div>
         </div>
     );

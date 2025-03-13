@@ -3,11 +3,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
-
+import Link from 'next/link';
 import image1 from './image/image1.gif';
 import image2 from './image/image13.png';
 import image3 from './image/image14.gif';
-
+import image4 from './image/image15.png';
+import image22 from './image/image22.png';
 
 
 const HeroArea = () => {
@@ -133,177 +134,253 @@ const HeroArea = () => {
                       </button>
 
                       </div>
-                    <div className='w-full pr-[32px] sm:pr-[36px] md:pr-[40px] lg:pr-[48px] xl:pr-[64px] 2xl:pr-[95px] relative'>
+                    <div className='w-full pr-[32px] sm:pr-[36px] md:pr-[40px] lg:pr-[48px] xl:pr-[64px] 2xl:pr-[95px] relative '>
                       <Image src={image2} alt=''/>
                       <Image className='absolute top-[18%] right-[10%] w-[60px] lg:w-[80px] xl:w-[120px] 2xl:w-[134px] -z-[1]' src={image3} alt=''/>
                       <Image className='absolute top-[0%] left-[0%] w-[60px] lg:w-[80px] xl:w-[120px] 2xl:w-[134px] -z-[1]' src={image3} alt=''/>
+
+                      <div className='group absolute top-[44%] right-[14%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
+                        <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
+
+                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="144.675" height="55.8838" rx="12" fill="white"/>
+                      <g clip-path="url(#clip0_1017_1104)">
+                      <path d="M23.79 29.7595H15.0785V27.598H26.3118C26.017 26.681 25.0673 25.8295 23.397 25.8295H15.2423C13.3755 25.8295 12.2948 26.5172 12.2948 28.0237V29.6285C12.2948 30.9385 13.4083 31.6917 15.0458 31.6917H23.8555V33.9842H12C12.2948 35.2287 13.2445 35.8837 14.9475 35.8837H23.8228C25.6895 35.8837 26.6065 35.1632 26.6065 33.624V32.0192C26.6065 30.611 25.5258 29.8577 23.79 29.7595Z" fill="black"/>
+                      <path d="M40.3484 25.8295H29.6064V35.8837H32.6522V32.0192H40.5777C42.7719 32.0192 43.9837 31.266 43.9837 29.4975V28.384C43.9509 26.7465 42.5754 25.8295 40.3484 25.8295ZM41.3309 29.039C41.3309 29.7595 41.1999 30.1525 40.0209 30.1525H32.6522L32.6849 27.5325H39.8899C41.1999 27.5325 41.3637 27.9255 41.3637 28.6132V29.039H41.3309Z" fill="black"/>
+                      <path d="M53.7959 25.4038L51.9619 27.6636L55.0731 31.9538H48.5886L46.9839 33.6568H56.3504L57.9551 35.8838H61.5576L53.7959 25.4038Z" fill="black"/>
+                      <path d="M67.6361 27.6308H79.0331C78.7384 26.4518 77.5921 25.8623 75.9546 25.8623H67.4396C65.9659 25.8623 64.5576 26.4518 64.5576 28.0566V33.6896C64.5576 35.2943 65.9659 35.8838 67.4396 35.8838H76.0529C78.0179 35.8838 78.7056 35.3271 79.0331 33.9843H67.6361V27.6308Z" fill="black"/>
+                      <path d="M85.1117 33.9843V30.9058H91.236V29.2028H82.0332V35.8838H95.6245V33.9843H85.1117Z" fill="black"/>
+                      <path d="M96.0826 25.8295H82.3604V27.598H96.0826V25.8295Z" fill="black"/>
+                      <path d="M140.675 20C114.475 21.5065 102.358 32.707 99.6393 35.3597L99.0825 35.8837H103.93C117.03 22.751 135.861 20.4257 140.675 20Z" fill="black"/>
+                      <path d="M98.7655 25.9087H94.3608L99.5499 29.9114C100.304 29.3713 101.179 28.7995 101.963 28.323L98.7655 25.9087ZM105.161 30.8962C104.407 31.4362 103.653 32.0398 102.929 32.6116L106.851 35.6295H111.286L105.161 30.8962Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1017_1104">
+                      <rect width="120.675" height="15.8837" fill="white" transform="translate(12 20)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      </div>
+
+                      <div className='group absolute top-[67%] right-[25%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
+                        <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
+
+                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="145" height="53" rx="12" fill="white"/>
+                        <path d="M37.7716 17.6428V12.7684H36.5V11.3764H40.8172V12.7684H39.4804V17.6428H37.7716Z" fill="black"/>
+                        <path d="M41.4302 17.6428V11.3764H43.139V13.7212H45.3658V11.3764H47.0746V17.6428H45.3658V15.1144H43.139V17.6428H41.4302Z" fill="black"/>
+                        <path d="M48.2896 17.6428V11.3764H51.8856V12.7772H50.0216V13.7136H51.8124V15.2388H50.0216V16.1232H51.8856V17.6428H48.2896Z" fill="black"/>
+                        <path d="M74.937 32.5044V19.9915H78.253V32.5044H74.937Z" fill="black"/>
+                        <path d="M74.4448 41.4446L75.4992 35.0926L77.19 35.1074L78.398 38.2602L79.6064 35.1074L81.2968 35.0926L82.3513 41.4446H80.6409L80.092 38.139L78.8248 41.4446H77.9712L76.7044 38.139L76.1556 41.4446H74.4448Z" fill="black"/>
+                        <path d="M87.8457 41.4446L90.2745 35.093H92.1117L94.5405 41.4446H92.6581L92.3177 40.4262H90.0685L89.7277 41.4446H87.8457ZM91.1933 37.2338L90.5613 39.0382H91.8249L91.1933 37.2338Z" fill="black"/>
+                        <path d="M104.07 41.4304V38.4356L101.716 35.0932L103.789 35.0928L104.93 36.8176L106.072 35.0928L108.144 35.0932L105.769 38.466V41.4304H104.07Z" fill="black"/>
+                        <path d="M69.5591 32.5044L66.5811 27.8684V32.5044H63.2095V19.9915H68.8015C71.0503 19.9915 72.5223 21.7644 72.5223 23.8292C72.5223 25.582 71.6087 26.9856 69.8579 27.3852L73.6747 32.3628V32.5044H69.5591ZM66.5811 22.5716V25.4584H67.5039C68.4639 25.4584 69.0643 24.8088 69.0643 24.0148C69.0643 23.2212 68.2979 22.5716 67.5039 22.5716H66.5811Z" fill="black"/>
+                        <path d="M83.21 41.4304V35.0932H85.64C87.4752 35.0932 88.1064 36.0952 88.1064 37.262C88.1064 38.4388 87.4672 39.3928 85.9576 39.3928H84.9844V41.4304H83.21ZM84.9844 36.5516V37.982H85.5652C86.5612 37.982 86.5336 36.5516 85.6068 36.5516H84.9844Z" fill="black"/>
+                        <path d="M101.993 28.0337V25.3753H108.448C108.888 29.3513 106.55 32.8538 101.985 32.8538C98.1565 32.8538 95.3589 30.1673 95.3589 26.2209C95.3589 22.2745 98.0901 19.5705 102.02 19.5705C104.789 19.5705 106.835 20.8613 107.869 23.1381L104.671 24.5065C104.185 23.1753 103.229 22.5249 101.997 22.5249C100.203 22.5249 98.8841 24.0085 98.9197 26.2345C98.9197 28.4785 100.004 29.8633 101.98 29.8633C103.319 29.8633 104.379 29.3981 104.593 28.0337H101.993Z" fill="black"/>
+                        <path d="M80.7339 32.5044V19.9915H84.1051L89.9215 27.3864V19.9915H93.2595V32.5044H89.9215L84.1051 25.09V32.5044H80.7339Z" fill="black"/>
+                        <path d="M95.0586 41.4304V35.0932H96.7658L99.6694 38.828V35.0932H101.36V41.4304H99.6778L96.7658 37.7184V41.4304H95.0586Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M54.3856 19.6009C58.51 19.6009 61.32 22.5677 61.32 26.2273C61.32 29.8869 58.4028 32.8538 54.3856 32.8538C50.3684 32.8538 47.4512 29.8869 47.4512 26.2273C47.4512 22.5677 50.2616 19.6009 54.3856 19.6009Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M70.3535 36.6448C71.3631 36.6448 72.0511 37.3828 72.0511 38.2928C72.0511 39.2028 71.3367 39.9408 70.3535 39.9408C69.3695 39.9408 68.6555 39.2028 68.6555 38.2928C68.6555 37.3828 69.3435 36.6448 70.3535 36.6448ZM70.3535 34.962C72.4283 34.962 73.8423 36.4532 73.8423 38.2928C73.8423 40.1325 72.3747 41.6237 70.3535 41.6237C68.3319 41.6237 66.8643 40.1325 66.8643 38.2928C66.8643 36.4532 68.2783 34.962 70.3535 34.962Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40.1344 27.3036L40.8824 27.3016C42.1252 27.2984 42.9656 27.7172 42.9656 28.5684C42.9656 29.3804 42.3276 29.8016 41.4192 29.8144L40.1344 29.8332V27.3036ZM40.1344 22.5088H40.696C41.408 22.5088 42.068 22.8516 42.068 23.6804C42.068 24.49 41.4076 24.852 40.696 24.852H40.1344V22.5088ZM36.7632 32.5044V19.9915H41.9784C44.2396 19.9915 45.1868 21.4755 45.1868 23.1864C45.1868 24.328 44.736 25.3028 43.9012 25.7428C45.5492 26.1224 46.3728 27.22 46.3728 28.7024C46.3728 30.6604 45.2872 32.5044 41.828 32.5044H36.7632Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M64.5994 34.962C65.1666 34.962 65.681 35.0856 66.127 35.3056V37.29H66.0234C65.735 36.898 65.2694 36.6452 64.6966 36.6452C63.7174 36.6452 63.0506 37.3828 63.0506 38.2928C63.0506 39.2028 63.743 39.9404 64.6966 39.9404C65.2538 39.9404 65.7214 39.6884 66.0146 39.2972H66.127V41.2689C65.6774 41.4957 65.161 41.6237 64.5994 41.6237C62.6818 41.6237 61.2886 40.1325 61.2886 38.2928C61.2886 36.4532 62.6306 34.962 64.5994 34.962Z" fill="black"/>
+                        </svg>
+
+                      </div>
+
+
+                      <div className='group absolute top-[65%] right-[50%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
+                        <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
+
+                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="145" height="53" rx="12" fill="white"/>
+                        <g clip-path="url(#clip0_1017_1143)">
+                        <path d="M118.215 23.0108L116.831 20.3014L116.182 20.9758L115.749 23.0108H114.412L115.796 16.3924H117.133L116.541 19.2297L119.278 16.3924H121L117.857 19.499L119.787 23.0108H118.215ZM110.561 23.0082L108.793 18.5623L107.982 23.0082H106.831L108.023 16.4184H109.208L110.926 20.7061L111.713 16.4184H112.864L111.671 23.0082H110.561ZM102.633 22.9885L103.953 16.3874H105.228L103.907 22.9885H102.633ZM96.4203 22.9446L97.8239 16.4517H99.179L98.0438 21.7277H100.726L100.467 22.9446H96.4203ZM77.042 23.1408C76.2574 23.1408 75.6493 22.9348 75.2176 22.5227C74.7859 22.1107 74.5701 21.5487 74.5701 20.8367C74.5701 20.6719 74.5845 20.5238 74.6134 20.3925L75.3625 16.4275H76.5893L75.8485 20.3539C75.8252 20.4195 75.8136 20.5283 75.8136 20.6803C75.8136 21.0356 75.9257 21.3285 76.1498 21.559C76.3751 21.7895 76.6725 21.9047 77.0421 21.9047C77.8255 21.9047 78.3138 21.3878 78.5069 20.3539L79.2576 16.4275H80.4928L79.7354 20.3828C79.5423 21.3523 79.2254 22.0547 78.7849 22.4899C78.3443 22.9238 77.7634 23.1408 77.042 23.1408ZM93.1418 23.0501L92.9983 21.9213H90.5805L90.0144 23.0501H88.5868L92.0097 16.3926H93.5132L94.4423 23.0501H93.1418ZM92.5576 17.8099L91.1465 20.6737H92.896L92.5576 17.8099ZM85.4924 22.9909L84.788 20.6457H83.8063L83.3407 22.9909H82.0731L83.386 16.3882H85.9301C86.4543 16.3882 86.892 16.5648 87.2431 16.9179C87.5941 17.2711 87.7696 17.7152 87.7696 18.2501C87.7696 18.8366 87.6086 19.3412 87.2866 19.764C86.9658 20.1868 86.5613 20.4472 86.073 20.5451L86.8943 22.9909H85.4924ZM85.386 19.4082C85.7196 19.4082 85.9783 19.3128 86.1619 19.1221C86.3468 18.93 86.4392 18.6851 86.4392 18.3874C86.4392 18.1631 86.3631 17.9801 86.2108 17.8383C86.0597 17.6965 85.8859 17.6256 85.6894 17.6256H84.413L84.0556 19.4082H85.386ZM67.9636 23.0053L69.2535 16.3414H73.3937L73.1471 17.5903H70.2624L69.9901 18.9992H72.8148L72.5681 20.2481H69.7451L69.4556 21.7565H72.3403L72.1039 23.0053H67.9636ZM64.0282 22.9859L62.2911 18.5472L61.4948 22.9859H60.3643L61.5353 16.4069H62.6985L64.3859 20.6876L65.1588 16.4069H66.2894L65.1184 22.9859H64.0282Z" fill="black"/>
+                        <path d="M24.0005 30.9309H51.5671L51.3563 29.4321H27.7336L44.5357 13.2367C46.8394 10.933 50.9077 12.4248 51.58 16.0981C52.7876 23.6891 53.7453 31.7684 54.7705 39.5395C55.3011 42.4852 58.456 43.1689 60.323 41.3019L72.0557 29.4392H56.7354L56.9399 30.9117H68.5428L59.3923 40.1348C58.1188 41.4082 56.6016 41.3634 56.0273 39.2204L52.8346 15.4605C52.1009 11.1764 46.9358 9.01705 43.5279 12.1338L24.0005 30.9309Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1017_1143">
+                        <rect width="96.9996" height="31.6829" fill="white" transform="translate(24.0005 10.6586)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+
+                      </div>
+                      
+                      
+
                     </div>
                   </div>
                   <div className='flex-1'>
                     <div className=' sm:pl-[40px] md:pl-[70px] lg:pl-[90px] xl:pl-[120px] 2xl:pl-[151px]'>
-                      <div className='backgroundndpadding pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px]  px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px] pb-[15px] sm:pb-[16px] md:pb-[20px] lg:pb-[24px] xl:pb-[32px] 2xl:pb-[35px]'>
-                          <div className='buypadidnsectoin text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[41px]'>Buy  MIND presale now!</div>
-                          <div className='flex justify-center xl:gap-0 gap-[2px] lg:gap-[20px] mt-[11px] sm:mt-[12px] md:mt-[13px] lg:mt-[14px] xl:mt-[15px] 2xl:mt-[16px] pb-[7px] sm:pb-[8px] md:pb-[9px] lg:pb-[10px] xl:pb-[11px] 2xl:pb-[12px] pt-[5px] md:pt-[6px]  2xl:pt-[7.44px] bg-[#000001] rounded-[5.955px] mb-[11px] sm:mb-[12px] md:mb-[13px] lg:mb-[14px] xl:mb-[15px] 2xl:mb-[17px]'>
+                      <div className='backgroundndpadding  py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] px-[24px] sm:px-[32px] md:px-[36px] lg:px-[40px] xl:px-[48px] 2xl:px-[67px] relative'>
 
-                              <h1 className='flex flex-col justify-center items-center gap-[5px] xl:gap-[7.44px] w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px]  xl:w-[117px]'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Days</h2>
+                          <div className='flex items-center justify-center flex-col gap-[8px] md:gap-[12px] xl:gap-[16px] absolute right-0 top-[50%] transform translate-x-1/2 -translate-y-1/2'>
+                            <Link href="/buy">
+                            <button className='buybuttonss w-[36px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Buy</button>
+                            </Link>
+                            <Link href="/stake">
+                            <button className='buybuttonssddd w-[36px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Stake</button>
+                            </Link>
+                          </div>
+                          <div className='flex items-center justify-between'>
+                            <div>
+                              <svg width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="7.04347" cy="6.9695" r="5.97337" fill="#FF007A" stroke="#334780" stroke-width="0.79645"/>
+                              <circle cx="24.565" cy="6.9695" r="5.97337" fill="#FDB215" stroke="#334780" stroke-width="0.79645"/>
+                              <circle cx="42.0874" cy="6.9695" r="5.97337" fill="#97E601" stroke="#334780" stroke-width="0.79645"/>
+                              </svg>
+                            </div>
+                            <div className='buypadidnsectoin text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>$EXTAIL PRESALE</div>
+                            <div className='opacity-0 pointer-event-none selector-none'>
+                              <svg width="49" height="14" viewBox="0 0 49 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="7.04347" cy="6.9695" r="5.97337" fill="#FF007A" stroke="#334780" stroke-width="0.79645"/>
+                              <circle cx="24.565" cy="6.9695" r="5.97337" fill="#FDB215" stroke="#334780" stroke-width="0.79645"/>
+                              <circle cx="42.0874" cy="6.9695" r="5.97337" fill="#97E601" stroke="#334780" stroke-width="0.79645"/>
+                              </svg>
+                            </div>
+                          </div>
+                          <div className='flex justify-center flex-col xl:gap-0 gap-[2px] lg:gap-[20px] mt-[11px] sm:mt-[12px] md:mt-[13px] lg:mt-[14px] xl:mt-[15px] 2xl:mt-[16px] p-[13px] sm:p-[14px] md:p-[15px] lg:p-[16px] xl:p-[20px] 2xl:p-[22.5px] bg-[#EFF2F9] rounded-[10px] md:rounded-[12px] xl:rounded-[15.929px] mb-[13px] sm:mb-[14px] md:mb-[15px] lg:mb-[16px] xl:mb-[20px] 2xl:mb-[24px] border-[1px] border-[#646F82] relative'>
+
+                            <h1 className='flex justify-center items-center bueyextat text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>BUY $EXTAI PRESALE</h1>
+
+                              <div className='flex justify-center items-center gap-[10px] sm:gap-[12px] xl:gap-[15px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19px] pb-[7px] sm:pb-[8px] md:pb-[9px] lg:pb-[10px] xl:pb-[11px] 2xl:pb-[12.5px]'>
+
+                              <h1 className=''>
                                 <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
                                   {String(time.days).padStart(2, '0')}
                                 </h1>
                               </h1>
-                              <h1 className='flex flex-col justify-center items-center gap-[5px] xl:gap-[7.44px]  w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px]  xl:w-[117px]'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>hours</h2>
+                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
+                              <h1 className=''>
+                                
                                 <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
                                   {String(time.hours).padStart(2, '0')}
                                 </h1>
                               </h1>
-                              <h1 className='flex flex-col justify-center items-center gap-[5px] xl:gap-[7.44px]  w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px]  xl:w-[117px]'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>minutes</h2>
+                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
+                              <h1 className=''>
                                 <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
                                   {String(time.minutes).padStart(2, '0')}
                                 </h1>
                               </h1>
-                              <h1 className='flex flex-col justify-center items-center gap-[5px] xl:gap-[7.44px]  w-[70px] sm:w-[80px] md:w-[90px] lg:w-[100px]  xl:w-[117px]'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>seconds</h2>
+                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
+                              <h1 className=''>    
                                 <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
                                   {String(time.seconds).padStart(2, '0')}
                                 </h1>
                               </h1>
+                              </div>
+                              {/* minutesecton */}
+                            <div className='flex justify-between items-center'>
+                              <h1 className='flex flex-col justify-center items-center'>
+                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Days</h2>
+                              </h1>
+                              <h1 className='flex flex-col justify-center items-center'>
+                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Hours</h2>
+                              </h1>
+                              <h1 className='flex flex-col justify-center items-center'>
+                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Minutes</h2>
+                              </h1>
+                              <h1 className='flex flex-col justify-center items-center'>
+                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Seconds</h2>
+                              </h1>
+                              </div>
+                              
                             
                           </div>
                           <div className='overflow-hidden'>
-                          <div className='ratingre text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[17px]'>
-                          USDT Raised: <span> 4,595,727.56 &frasl; 5,105,064</span>
+                          <div className='ratingre text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16.3px]'>
+                          $EXTAIL Sold: 3.805.500
                         </div>
 
-                            <div className='lineone h-[14px] sm:h-[15px] md:h-[16px] lg:h-[20px] xl:h-[24px] 2xl:h-[32px] p-[1.41px] relative mb-[10px] sm:mb-[11px] md:mb-[12px] lg:mb-[13px] xl:mb-[14px] 2xl:mb-[15px]'>
-                              <div className='linetwo h-full w-8/9'></div>
-                                  <h3 className='untilprice text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] absolute left-1/2 top-[54%] transform -translate-x-1/2 -translate-y-1/2'>UNTIL PRICE RISE</h3>
+                            <div className='lineone  p-[1.41px] relative mb-[12px] sm:mb-[13px] md:mb-[14px] lg:mb-[14px] xl:mb-[15px] 2xl:mb-[16px]'>
+                                  <h3 className='untilprice text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] py-[6px] sm:py-[7px] xl:py-[9.557px]'>UNTIL PRICE RISE</h3>
                             </div>
                             <div className='flex justify-between items-center pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px]'>
-                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>My purchased = 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[25px]' viewBox='0 0 26 25' fill='none'>
+                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Purchased $$EXTAIL= 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[22px]' viewBox='0 0 26 25' fill='none'>
                                 <path d='M12.5054 8.21667V9.20915M12.5054 11.6904V16.1566M12.5054 22.1115C17.9868 22.1115 22.4304 17.6679 22.4304 12.1866C22.4304 6.70526 17.9868 2.26175 12.5054 2.26175C7.02408 2.26175 2.58057 6.70526 2.58057 12.1866C2.58057 17.6679 7.02408 22.1115 12.5054 22.1115Z' stroke='white' stroke-width='1.78648' stroke-linecap='round' stroke-linejoin='round'/>
                                 </svg></div>
-                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>My stakeable = 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[25px]' viewBox='0 0 26 25' fill='none'>
+                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Stakeable $EXTAIL= 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[22px]' viewBox='0 0 26 25' fill='none'>
                                 <path d='M12.5054 8.21667V9.20915M12.5054 11.6904V16.1566M12.5054 22.1115C17.9868 22.1115 22.4304 17.6679 22.4304 12.1866C22.4304 6.70526 17.9868 2.26175 12.5054 2.26175C7.02408 2.26175 2.58057 6.70526 2.58057 12.1866C2.58057 17.6679 7.02408 22.1115 12.5054 22.1115Z' stroke='white' stroke-width='1.78648' stroke-linecap='round' stroke-linejoin='round'/>
                               </svg></div>
                             </div>
-                            <div className='grid grid-cols-3 items-center justify-between pb-[14px] sm:pb-[15px] md:pb-[16px] lg:pb-[20px] xl:pb-[24px] 2xl:pb-[32px]'>
-                              {/* Left SVG */}
-                              <svg className='w-full col-span-1 pr-[20px] sm:pr-[24px] md:pr-[32px] lg:pr-[36px] xl:pr-[40px] 2xl:pr-[48px]' height='3' viewBox='0 0 119 3' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                <rect x='0.973633' y='0.677185' width='117.893' height='1.48873' fill='white' />
-                              </svg>
-
-                              {/* Center Text */}
-                              <div className='col-span-1 mindcllinges text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>
-                                1  MIND =  0.0032273
-                              </div>
-
-                              {/* Right SVG */}
-                              <svg className='w-full col-span-1 pl-[20px] sm:pl-[24px] md:pl-[32px] lg:pl-[36px] xl:pl-[40px] 2xl:pl-[48px]' height='3' viewBox='0 0 119 3' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                <rect x='0.973633' y='0.677185' width='117.893' height='1.48873' fill='white' />
-                              </svg>
+                            
+                          <div className='flex justify-center items-center gap-[12px] md:gap-[16px] xl:gap-[21px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[28px] sm:flex-row flex-col'>
+                              <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer'>
+                                  BUY WITH SOLANA
+                              </button>
+                              <button className='flex-1 w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] borderlinisinsa cursor-pointer'>
+                                  Buy with USDC
+                              </button>
                           </div>
-                          <div className='flex justify-center items-center gap-[12px] md:gap-[16px] xl:gap-[21px]'>
-                              <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] cursor-pointer'>
-                              Buy with Crypto
-                            </button>
-                            <button className='flex-1 w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] borderlinisinsa cursor-pointer'>
-                              Buy with Crypto
+                          <div className='md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px]'>
+                            <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer !text-[#000] mt-[12px] sm:mt-[13px] md:mt-[14px] lg:mt-[15px] xl:mt-[16px] 2xl:mt-[18px] '>
+                              connect wallet
                             </button>
                           </div>
                           </div>
-                          <div className='donthavwallet pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[12px] sm:pb-[13px] md:pb-[14px] lg:pb-[15px] xl:pb-[16px] 2xl:pb-[18px] cursor-pointer'>
-                          Don&apos;t have a wallet?
-                        </div>
+                            <div className='donthavwallet pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[23.16px] pb-[4px] md:pb-[5px] lg:pb-[6px] xl:pb-[7px] 2xl:pb-[8px] cursor-pointer !text-[#353535] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>
+                            Don&apos;t have a wallet?
+                          </div>
 
-                          <div className='flex items-center justify-center gap-[8px] md:gap-[10px] xl:gap-[12px] herosectionpowerby text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Powered by
-
-                          <svg xmlns='http://www.w3.org/2000/svg' className='h-[13px] sm:h-[14px] md:h-[15px] lg:h-[16px] xl:h-[20px] 2xl:h-[25px]' viewBox='0 0 180 25' fill='none'>
-                          <g clip-path='url(#clip0_943_587)'>
-                            <path d='M25.2938 19.2307L21.2798 4.04241H24.2524L26.9862 16.128L30.1975 4.04241H33.2569L36.3814 16.128L39.1152 4.04241H42.1095L37.9869 19.2307H34.6889L31.6729 7.9697L28.5702 19.2307H25.2938ZM47.4911 19.4911C46.4063 19.4911 45.4443 19.2596 44.6054 18.7967C43.7664 18.3338 43.1082 17.683 42.6309 16.8439C42.1536 16.005 41.9149 15.0358 41.9149 13.9365C41.9149 12.8227 42.1463 11.8319 42.6092 10.9639C43.0865 10.0961 43.7375 9.42343 44.562 8.94605C45.4009 8.45425 46.3845 8.20835 47.5129 8.20835C48.5688 8.20835 49.5018 8.43976 50.3118 8.90264C51.1219 9.36553 51.7511 10.002 52.1995 10.812C52.6624 11.6076 52.8938 12.4972 52.8938 13.4808C52.8938 13.64 52.8866 13.8063 52.8722 13.9799C52.8722 14.1535 52.8649 14.3343 52.8504 14.5223H44.6705C44.7283 15.3613 45.0176 16.0195 45.5383 16.4968C46.0735 16.9742 46.7173 17.2128 47.4694 17.2128C48.0336 17.2128 48.5037 17.0898 48.8798 16.8439C49.2703 16.5836 49.5596 16.2509 49.7477 15.8458H52.5684C52.3659 16.5257 52.0259 17.1478 51.5486 17.7119C51.0857 18.2615 50.5071 18.6955 49.8128 19.0137C49.1329 19.3319 48.3591 19.4911 47.4911 19.4911ZM47.5129 10.4649C46.833 10.4649 46.2327 10.6602 45.7119 11.0507C45.1912 11.4268 44.8585 12.0054 44.7139 12.7865H50.0731C50.0298 12.0778 49.7694 11.5136 49.292 11.0941C48.8147 10.6746 48.2216 10.4649 47.5129 10.4649ZM60.9578 19.4911C60.1478 19.4911 59.439 19.3392 58.8315 19.0355C58.224 18.7317 57.7321 18.3049 57.3561 17.7553L57.0523 19.2307H54.5788V3.60846H57.3561V10.0092C57.7032 9.53193 58.1588 9.11238 58.723 8.75081C59.3016 8.38917 60.0466 8.20835 60.9578 8.20835C61.9704 8.20835 62.8745 8.45425 63.6701 8.94605C64.4657 9.43786 65.0949 10.1105 65.5578 10.9639C66.0207 11.8174 66.2521 12.7865 66.2521 13.8714C66.2521 14.9563 66.0207 15.9254 65.5578 16.7789C65.0949 17.6178 64.4657 18.2833 63.6701 18.7751C62.8745 19.2524 61.9704 19.4911 60.9578 19.4911ZM60.372 17.0609C61.2544 17.0609 61.9848 16.7644 62.5635 16.1713C63.1421 15.5783 63.4314 14.8117 63.4314 13.8714C63.4314 12.9312 63.1421 12.1573 62.5635 11.5498C61.9848 10.9423 61.2544 10.6384 60.372 10.6384C59.4752 10.6384 58.7375 10.9423 58.1589 11.5498C57.5947 12.1428 57.3127 12.9095 57.3127 13.8497C57.3127 14.7899 57.5947 15.5638 58.1589 16.1713C58.7375 16.7644 59.4752 17.0609 60.372 17.0609ZM73.116 19.4911C72.1179 19.4911 71.2138 19.3175 70.4038 18.9703C69.5937 18.6087 68.9428 18.059 68.451 17.3213C67.9592 16.5836 67.6988 15.6579 67.6699 14.544H70.4038C70.4182 15.2817 70.6569 15.9038 71.1198 16.4101C71.5971 16.9019 72.2625 17.1478 73.116 17.1478C73.926 17.1478 74.548 16.9235 74.9819 16.4751C75.4161 16.0267 75.6327 15.4625 75.6327 14.7827C75.6327 13.9871 75.3436 13.3868 74.765 12.9818C74.2008 12.5623 73.4704 12.3526 72.5735 12.3526H71.4453V10.0743H72.5952C73.3329 10.0743 73.9477 9.90074 74.4395 9.5536C74.9313 9.20645 75.1772 8.69291 75.1772 8.01304C75.1772 7.44893 74.9892 7.00051 74.6131 6.66781C74.2515 6.32065 73.7452 6.14707 73.0942 6.14707C72.3854 6.14707 71.8286 6.35682 71.4235 6.77631C71.033 7.19579 70.816 7.70929 70.7726 8.31684H68.0604C68.1183 6.91372 68.6029 5.80715 69.5141 4.9971C70.4399 4.18706 71.6333 3.78204 73.0942 3.78204C74.1357 3.78204 75.0109 3.97009 75.7194 4.34618C76.4427 4.7078 76.9852 5.19238 77.3468 5.79991C77.7234 6.40744 77.9109 7.08007 77.9109 7.81779C77.9109 8.67124 77.6726 9.39444 77.1951 9.98756C76.7319 10.5661 76.1535 10.9567 75.4594 11.1592C76.3127 11.3328 77.0068 11.7523 77.5426 12.4177C78.0776 13.0686 78.3451 13.8931 78.3451 14.8912C78.3451 15.7302 78.1426 16.4968 77.7376 17.1912C77.3326 17.8855 76.7393 18.4423 75.9585 18.8618C75.1917 19.2814 74.2442 19.4911 73.116 19.4911ZM80.4215 19.2307V4.04241H86.0411C87.2561 4.04241 88.2618 4.24492 89.0575 4.64994C89.8526 5.05496 90.4458 5.61187 90.8366 6.32065C91.2266 7.02944 91.4224 7.82502 91.4224 8.7074C91.4224 9.54635 91.2341 10.3202 90.8583 11.029C90.4817 11.7234 89.8959 12.2875 89.1009 12.7215C88.3051 13.1409 87.2852 13.3507 86.0411 13.3507H83.1988V19.2307H80.4215ZM83.1988 11.0941H85.8678C86.8369 11.0941 87.531 10.8843 87.951 10.4649C88.3843 10.0309 88.6018 9.4451 88.6018 8.7074C88.6018 7.9552 88.3843 7.36937 87.951 6.94988C87.531 6.51593 86.8369 6.29896 85.8678 6.29896H83.1988V11.0941ZM95.9175 19.4911C94.9917 19.4911 94.2318 19.3464 93.6393 19.0571C93.0461 18.7533 92.6052 18.3556 92.3153 17.8638C92.0261 17.3719 91.8819 16.8295 91.8819 16.2364C91.8819 15.2384 92.272 14.4283 93.0535 13.8063C93.8343 13.1843 95.0059 12.8733 96.5683 12.8733H99.3023V12.613C99.3023 11.8752 99.0923 11.3328 98.6732 10.9857C98.2532 10.6384 97.7324 10.4649 97.1108 10.4649C96.5466 10.4649 96.055 10.6023 95.6351 10.8772C95.2159 11.1375 94.9551 11.528 94.8543 12.0488H92.142C92.2144 11.2677 92.4745 10.5879 92.9228 10.0092C93.386 9.43061 93.9793 8.98947 94.7026 8.68566C95.4259 8.36743 96.2358 8.20835 97.1324 8.20835C98.6657 8.20835 99.8739 8.59166 100.756 9.35828C101.638 10.125 102.08 11.2098 102.08 12.613V19.2307H99.7147L99.454 17.4949C99.1357 18.0735 98.6873 18.5508 98.109 18.927C97.5449 19.303 96.8141 19.4911 95.9175 19.4911ZM96.5467 17.3213C97.3424 17.3213 97.9566 17.0609 98.3907 16.5402C98.839 16.0195 99.1215 15.3758 99.2373 14.6091H96.8724C96.1342 14.6091 95.6067 14.7465 95.2884 15.0214C94.9701 15.2817 94.8109 15.6072 94.8109 15.9978C94.8109 16.4172 94.9701 16.7427 95.2884 16.9742C95.6067 17.2056 96.0259 17.3213 96.5467 17.3213ZM105.064 24.0041L107.559 18.5147H106.908L102.721 8.46875H105.736L108.753 16.0412L111.898 8.46875H114.85L108.015 24.0041H105.064ZM116.014 19.2307V8.46875H118.466L118.705 9.92248C119.052 9.40169 119.508 8.98947 120.072 8.68566C120.65 8.36743 121.315 8.20835 122.068 8.20835C123.731 8.20835 124.91 8.85206 125.604 10.1394C125.995 9.54635 126.516 9.07621 127.167 8.72907C127.832 8.38192 128.556 8.20835 129.336 8.20835C130.74 8.20835 131.817 8.62782 132.57 9.46677C133.322 10.3058 133.698 11.5353 133.698 13.1554V19.2307H130.92V13.4158C130.92 12.49 130.74 11.7812 130.378 11.2894C130.031 10.7976 129.488 10.5517 128.751 10.5517C127.998 10.5517 127.391 10.8265 126.928 11.3762C126.48 11.9259 126.256 12.6925 126.256 13.6762V19.2307H123.478V13.4158C123.478 12.49 123.298 11.7812 122.936 11.2894C122.574 10.7976 122.017 10.5517 121.265 10.5517C120.527 10.5517 119.927 10.8265 119.464 11.3762C119.015 11.9259 118.791 12.6925 118.791 13.6762V19.2307H116.014ZM140.913 19.4911C139.828 19.4911 138.866 19.2596 138.027 18.7967C137.188 18.3338 136.53 17.683 136.052 16.8439C135.575 16.005 135.336 15.0358 135.336 13.9365C135.336 12.8227 135.568 11.8319 136.03 10.9639C136.508 10.0961 137.159 9.42343 137.984 8.94605C138.823 8.45425 139.806 8.20835 140.934 8.20835C141.99 8.20835 142.923 8.43976 143.733 8.90264C144.543 9.36553 145.172 10.002 145.621 10.812C146.084 11.6076 146.316 12.4972 146.316 13.4808C146.316 13.64 146.308 13.8063 146.294 13.9799C146.294 14.1535 146.286 14.3343 146.272 14.5223H138.092C138.15 15.3613 138.439 16.0195 138.96 16.4968C139.495 16.9742 140.139 17.2128 140.891 17.2128C141.455 17.2128 141.925 17.0898 142.302 16.8439C142.692 16.5836 142.981 16.2509 143.169 15.8458H145.99C145.787 16.5257 145.447 17.1478 144.97 17.7119C144.507 18.2615 143.928 18.6955 143.234 19.0137C142.554 19.3319 141.781 19.4911 140.913 19.4911ZM140.934 10.4649C140.254 10.4649 139.654 10.6602 139.134 11.0507C138.613 11.4268 138.28 12.0054 138.135 12.7865H143.495C143.452 12.0778 143.191 11.5136 142.713 11.0941C142.236 10.6746 141.643 10.4649 140.934 10.4649ZM148.001 19.2307V8.46875H150.452L150.669 10.2913C151.002 9.65484 151.479 9.14854 152.101 8.77248C152.738 8.39642 153.483 8.20835 154.336 8.20835C155.667 8.20835 156.701 8.62782 157.439 9.46677C158.177 10.3058 158.546 11.5353 158.546 13.1554V19.2307H155.768V13.4158C155.768 12.49 155.58 11.7812 155.204 11.2894C154.828 10.7976 154.242 10.5517 153.446 10.5517C152.665 10.5517 152.022 10.8265 151.515 11.3762C151.024 11.9259 150.778 12.6925 150.778 13.6762V19.2307H148.001ZM165.345 19.2307C164.217 19.2307 163.313 18.9559 162.633 18.4062C161.954 17.8565 161.614 16.8801 161.614 15.477V10.7903H159.769V8.46875H161.614L161.939 5.58294H164.391V8.46875H167.298V10.7903H164.391V15.4987C164.391 16.0195 164.499 16.3811 164.716 16.5836C164.948 16.7716 165.338 16.8657 165.888 16.8657H167.233V19.2307H165.345ZM173.48 19.4911C172.525 19.4911 171.686 19.3392 170.962 19.0355C170.239 18.7172 169.661 18.2833 169.227 17.7336C168.793 17.1839 168.533 16.5475 168.446 15.8242H171.245C171.332 16.2437 171.563 16.6053 171.939 16.909C172.33 17.1983 172.829 17.343 173.436 17.343C174.044 17.343 174.485 17.2201 174.76 16.9742C175.049 16.7283 175.194 16.4462 175.194 16.128C175.194 15.6651 174.991 15.354 174.586 15.195C174.181 15.0214 173.617 14.855 172.894 14.6959C172.431 14.5947 171.961 14.4717 171.483 14.327C171.006 14.1824 170.565 14.0016 170.16 13.7846C169.769 13.5532 169.451 13.2639 169.205 12.9167C168.959 12.5551 168.837 12.1139 168.837 11.5931C168.837 10.6384 169.213 9.83566 169.965 9.18471C170.732 8.53383 171.802 8.20835 173.176 8.20835C174.449 8.20835 175.461 8.50484 176.214 9.09796C176.98 9.691 177.436 10.5083 177.58 11.5498H174.955C174.796 10.7542 174.196 10.3564 173.154 10.3564C172.633 10.3564 172.228 10.4576 171.939 10.6602C171.664 10.8627 171.527 11.1158 171.527 11.4196C171.527 11.7378 171.737 11.9909 172.156 12.179C172.576 12.3671 173.132 12.5406 173.827 12.6997C174.579 12.8733 175.266 13.0686 175.888 13.2856C176.525 13.4881 177.031 13.7991 177.407 14.2185C177.783 14.6236 177.971 15.2094 177.971 15.9761C177.985 16.6415 177.812 17.2418 177.45 17.777C177.089 18.3122 176.568 18.7317 175.888 19.0355C175.208 19.3392 174.406 19.4911 173.48 19.4911Z' fill='white'/>
-                            <path d='M7.96292 20.9123C10.2522 20.9123 12.108 19.0565 12.108 16.7673C12.108 14.4781 10.2522 12.6223 7.96292 12.6223C5.67367 12.6223 3.81787 14.4781 3.81787 16.7673C3.81787 19.0565 5.67367 20.9123 7.96292 20.9123Z' fill='white'/>
-                            <path d='M12.5393 13.2269C14.3516 13.2269 15.8208 11.7577 15.8208 9.94538C15.8208 8.13306 14.3516 6.66388 12.5393 6.66388C10.727 6.66388 9.25781 8.13306 9.25781 9.94538C9.25781 11.7577 10.727 13.2269 12.5393 13.2269Z' fill='white'/>
-                            <path d='M6.06303 8.47731C7.68458 8.47731 8.9991 7.16279 8.9991 5.54124C8.9991 3.91969 7.68458 2.60516 6.06303 2.60516C4.44148 2.60516 3.12695 3.91969 3.12695 5.54124C3.12695 7.16279 4.44148 8.47731 6.06303 8.47731Z' fill='white'/>
-                            <path d='M4.33648 12.6224C5.29033 12.6224 6.06358 11.8491 6.06358 10.8953C6.06358 9.9414 5.29033 9.16815 4.33648 9.16815C3.38263 9.16815 2.60938 9.9414 2.60938 10.8953C2.60938 11.8491 3.38263 12.6224 4.33648 12.6224Z' fill='white'/>
-                          </g>
-                          <defs>
-                            <clipPath id='clip0_943_587'>
-                              <rect width='178.504' height='23.6113' fill='white' transform='translate(0.56543 0.401489)'/>
-                            </clipPath>
-                          </defs>
-                        </svg>
+                          <div className='flex items-center justify-center gap-[8px] md:gap-[10px] xl:gap-[12px] herosectionpowerby '><span className='!text-[461B0F] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] !text-[#461B0F]'>Powered by</span>
+                          
+                            <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[26px] aspect-square' src={image22} alt=''/>
+                            <span className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>PresaleShild</span>
                           </div>
                       </div>
                       <div className='truestanssafety text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[23px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] pb-[7] md:pb-[9px] xl:pb-[12px]'>trust and safety audits</div>
                         <div className='flex justify-center items-center gap-[10px] md:gap-[14px] xl:gap-[19]'>
-                        <svg className='w-[24px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[70px] cursor-pointer hover:sepia duraction-300' viewBox='0 0 70 70' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                        <g filter='url(#filter0_d_943_596)'>
-                        <path d='M0.5 9.61036C0.5 4.43569 4.6949 0.240784 9.86958 0.240784H56.1304C61.3051 0.240784 65.5 4.43569 65.5 9.61036V55.8712C65.5 61.0459 61.3051 65.2408 56.1304 65.2408H9.86958C4.6949 65.2408 0.5 61.0459 0.5 55.8712V9.61036Z' fill='white'/>
-                        <g clip-path='url(#clip0_943_596)'>
-                        <g clip-path='url(#clip1_943_596)'>
-                        <g clip-path='url(#clip2_943_596)'>
-                        <path fill-rule='evenodd' clip-rule='evenodd' d='M36.2233 42.1566L30.4379 47.0049L28.8022 47.2266L25.142 34.6143L12.2661 30.3852L51.9061 15.2754L53.7759 15.3172L47.5304 49.289L36.2233 42.1566ZM46.1375 21.6589L27.9739 32.5478L30.0656 41.4706L30.6387 41.3409L32.8223 34.4553L47.338 21.8012L46.1375 21.6589Z' fill='black'/>
-                        </g>
-                        </g>
-                        </g>
-                        </g>
-                        <defs>
-                        <filter id='filter0_d_943_596' x='0.5' y='0.240784' width='69' height='69' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
-                        <feFlood flood-opacity='0' result='BackgroundImageFix'/>
-                        <feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/>
-                        <feOffset dx='4' dy='4'/>
-                        <feComposite in2='hardAlpha' operator='out'/>
-                        <feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/>
-                        <feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_943_596'/>
-                        <feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_943_596' result='shape'/>
-                        </filter>
-                        <clipPath id='clip0_943_596'>
-                        <rect width='43.4709' height='35.7295' fill='white' transform='translate(11.5 13.904)'/>
-                        </clipPath>
-                        <clipPath id='clip1_943_596'>
-                        <rect width='43.4709' height='35.7295' fill='white' transform='translate(11.5 13.904)'/>
-                        </clipPath>
-                        <clipPath id='clip2_943_596'>
-                        <rect width='43.4709' height='35.7083' fill='white' transform='translate(11.5 13.9146)'/>
-                        </clipPath>
-                        </defs>
-                        </svg>
-                        <svg className='w-[24px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[70px] cursor-pointer hover:sepia duraction-300' viewBox='0 0 70 70' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                        <g filter='url(#filter0_d_943_601)'>
-                        <path d='M0.5 9.61036C0.5 4.43569 4.6949 0.240784 9.86958 0.240784H56.1304C61.3051 0.240784 65.5 4.43569 65.5 9.61036V55.8712C65.5 61.0459 61.3051 65.2408 56.1304 65.2408H9.86958C4.6949 65.2408 0.5 61.0459 0.5 55.8712V9.61036Z' fill='white'/>
-                        <g clip-path='url(#clip0_943_601)'>
-                        <g clip-path='url(#clip1_943_601)'>
-                        <g clip-path='url(#clip2_943_601)'>
-                        <path d='M35.3598 31.6468L47.5579 17.4675H44.6673L34.0758 29.7791L25.6163 17.4675H15.8594L28.6517 36.0848L15.8594 50.9539H18.7501L29.9351 37.9524L38.8689 50.9539H48.6259L35.3598 31.6468ZM31.4007 36.2489L30.1045 34.3949L19.7916 19.6435H24.2316L32.5541 31.5485L33.8504 33.4023L44.6687 48.8769H40.2287L31.4007 36.2489Z' fill='black'/>
-                        </g>
+
+                        <div className='svgcolokrchange duration-300 h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[70px] w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[70px] cursor-pointer group !rounded-[5px] !sm:rounded-auto'>
+                        <svg className="w-[15px] sm:w-[16px] md:w-[20px] lg:w-[24px] xl:w-[32px] 2xl:w-[36px]" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1017_469)">
+                        <g clip-path="url(#clip1_1017_469)">
+                        <g clip-path="url(#clip2_1017_469)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2228 29.1566L19.4375 34.0048L17.8017 34.2265L14.1415 21.6142L1.26562 17.3851L40.9056 2.27533L42.7754 2.31716L36.5299 36.2889L25.2228 29.1566ZM35.137 8.65887L16.9734 19.5478L19.0652 28.4705L19.6382 28.3409L21.8218 21.4552L36.3376 8.8011L35.137 8.65887Z" className='fill-black group-hover:fill-white'/>
                         </g>
                         </g>
                         </g>
                         <defs>
-                        <filter id='filter0_d_943_601' x='0.5' y='0.240784' width='69' height='69' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'>
-                        <feFlood flood-opacity='0' result='BackgroundImageFix'/>
-                        <feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/>
-                        <feOffset dx='4' dy='4'/>
-                        <feComposite in2='hardAlpha' operator='out'/>
-                        <feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/>
-                        <feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_943_601'/>
-                        <feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_943_601' result='shape'/>
-                        </filter>
-                        <clipPath id='clip0_943_601'>
-                        <rect width='34.2408' height='35.7295' fill='white' transform='translate(15.5 16.5981)'/>
+                        <clipPath id="clip0_1017_469">
+                        <rect width="43.4709" height="35.7295" fill="white" transform="translate(0.5 0.903992)"/>
                         </clipPath>
-                        <clipPath id='clip1_943_601'>
-                        <rect width='34.2408' height='35.7295' fill='white' transform='translate(15.5 16.5981)'/>
+                        <clipPath id="clip1_1017_469">
+                        <rect width="43.4709" height="35.7295" fill="white" transform="translate(0.5 0.903992)"/>
                         </clipPath>
-                        <clipPath id='clip2_943_601'>
-                        <rect width='34.2408' height='35.7295' fill='white' transform='translate(15.5 16.5981)'/>
+                        <clipPath id="clip2_1017_469">
+                        <rect width="43.4709" height="35.7083" fill="white" transform="translate(0.5 0.914612)"/>
                         </clipPath>
                         </defs>
                         </svg>
 
                         </div>
+
+                        <div className='svgcolokrchange duration-300 h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[70px] w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[70px] cursor-pointer group !rounded-[5px] !sm:rounded-auto'>
+                        <svg className="w-[15px] sm:w-[16px] md:w-[20px] lg:w-[24px] xl:w-[32px] 2xl:w-[36px]" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1017_476)">
+                        <g clip-path="url(#clip1_1017_476)">
+                        <path d="M20.3598 15.6468L32.5579 1.46747H29.6673L19.0758 13.7791L10.6163 1.46747H0.859375L13.6517 20.0848L0.859375 34.9539H3.75009L14.9351 21.9524L23.8689 34.9539H33.6259L20.3598 15.6468ZM16.4007 20.2489L15.1045 18.3949L4.79165 3.64354H9.23161L17.5541 15.5485L18.8504 17.4023L29.6687 32.8769H25.2287L16.4007 20.2489Z" className='fill-black group-hover:fill-white'/>
+                        </g>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1017_476">
+                        <rect width="34.2408" height="35.7295" fill="white" transform="translate(0.5 0.598083)"/>
+                        </clipPath>
+                        <clipPath id="clip1_1017_476">
+                        <rect width="34.2408" height="35.7295" fill="white" transform="translate(0.5 0.598083)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+
+
+                        </div>
+                        
+                        </div>
+                        
                       </div>
+                      
                   </div>
                 </div>
             </div>

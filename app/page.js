@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className='scroll-auto'>
       <Header/>
-      <CustomCursor className='md:block hidden' />
+      {/* <CustomCursor className='md:block hidden' /> */}
       <Body/>
       <Footer/>
     </div>

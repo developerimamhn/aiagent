@@ -31,8 +31,11 @@ const images = [
 
 const Pageone = () => {
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".section1", {
+    const mm = gsap.matchMedia();
+    
+    mm.add("(min-width: 1024px)", () => {
+      // Desktop animation
+      return gsap.from(".section1", {
         opacity: 0,
         y: 250,
         duration: 2,
@@ -44,17 +47,32 @@ const Pageone = () => {
         },
       });
     });
-  
-    ScrollTrigger.refresh();
-    return () => ctx.revert();
+
+    mm.add("(max-width: 1023px)", () => {
+      // Mobile & Tablet animation
+      return gsap.from(".section1", {
+        opacity: 0,
+        y: 100, // Smaller movement for smaller screens
+        duration: 1.5, 
+        scrollTrigger: {
+          trigger: ".section1",
+          start: "top 90%",
+          end: "top 60%",
+          scrub: 1,
+        },
+      });
+    });
+
+    return () => mm.revert(); // Cleanup on unmount
+
   }, []);
     return ( 
         <div className='section1 relative z-[8] ' id="HowItWorks">
             <div className='py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] px-[24px] sm:px-[0]'>
               <div className="scroll-container">
-                  <div className="scroll-content gap-[30px] sm:gap-[40px] md:gap-[50px] lg:gap-[60px] xl:gap-[70px] 2xl:gap-[81px]">
+                  <div className="scroll-contents gap-[17px] sm:gap-[20px] md:gap-[25px] lg:gap-[30px] xl:gap-[40px] 2xl:gap-[51px]">
                       {[...images, ...images].map((image, index) => (
-                      <div key={index} className="flex flex-col items-center w-[170px] sm:w-[261px] ">
+                      <div key={index} className="flex flex-col items-center w-[170px] sm:w-[230px] xl:w-[280px] xl:w-[337px] ">
                           <Image src={image.src} alt={image.caption} />
                       </div>
                       ))}
