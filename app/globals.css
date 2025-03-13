@@ -588,11 +588,13 @@ body {
   background: #202022;
   box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 0.35);
   transition: 0.5s;
+  border: 2px solid #202022;
 }
 
 .hwobysection:hover{
-  background: #fff;
-  box-shadow: 12px 12px 0px 0px rgba(255, 255, 255, 0.35);
+  border: 2px solid #000;
+  background: #FFF;
+  box-shadow: 12px 12px 0px 0px #000;
 }
 
 .onetext{
@@ -603,6 +605,94 @@ body {
   font-weight: 400;
   line-height: 114.025px; /* 100% */
 }
+
+.currentpages{
+  color: #646F82;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.extras{
+  color: #001F54;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.extaiscas{
+  color: #FFF;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btfdinwalet{
+  color: rgba(255, 255, 255, 0.70);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#btfd-wallet{
+  outline: none;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 25";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stakecansa{
+  color: #646F82;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #F7E7D6;
+}
+
+.backgroundimae{
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #FFA36F;
+}
+
+#btfd-wallet:focus{
+  outline: none;
+}
+
+.extaling{
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 .getwallet{
   color: #FFF;

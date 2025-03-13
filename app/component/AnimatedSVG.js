@@ -56,7 +56,7 @@ const AnimatedSVG = () => {
     },
   };
 
-  const series = [42, 47, 52, 58, 65];  // Data points
+  const series = [60, 50, 40, 35, 30];  // Data points
 
   // Set up the Intersection Observer
   useEffect(() => {
@@ -84,10 +84,12 @@ const AnimatedSVG = () => {
     };
   }, []);
 
+  
+
 
 
   return (
-    <div className='justify-center items-center relative flex flex-col sm:grid grid-cols-5 gap-[2px] pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[88px]'>
+    <div className='justify-center items-center relative flex flex-col sm:grid grid-cols-5 gap-[2px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[88px]'>
       <div className='flex itesm-end justify-end col-span-1'>
       <svg className='w-[150px] sm:w-[180px] lg:w-[200px] 2xl:w-[265px] sm:block hidden' viewBox="0 0 265 323" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20.5" cy="304.5" r="11.5" fill="#8361E5"/>

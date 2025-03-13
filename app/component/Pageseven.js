@@ -10,37 +10,38 @@ import backgroundimage from './image/backgronhero.gif';
 
 
 const faqs = [
-    {
-      id: 1,
-      question: "What is $EXTAI?",
-      answer:
-        "$EXTAI is a cutting-edge, extraterrestrial-inspired AI project that blends artificial intelligence with unique, otherworldly concepts. The project offers insights, technology, and token benefits to early investors, positioning itself as a game-changer in the crypto space.",
-    },
-    {
-      id: 2,
-      question: "How do I participate in staking?",
-      answer:
-        "$EXTAI utilizes advanced machine learning algorithms and blockchain technology to provide AI-driven solutions in various sectors.",
-    },
-    {
-      id: 3,
-      question: "When does the PRESALE end?",
-      answer:
-        "Early investors gain exclusive access to AI technology, partnerships, and unique token benefits that enhance their investment portfolio.",
-    },
-    {
-      id: 4,
-      question: "How do I participate in staking?",
-      answer:
-        "$EXTAI utilizes advanced machine learning algorithms and blockchain technology to provide AI-driven solutions in various sectors.",
-    },
-    {
-      id: 5,
-      question: "When does the PRESALE end?",
-      answer:
-        "Early investors gain exclusive access to AI technology, partnerships, and unique token benefits that enhance their investment portfolio.",
-    },
-  ];
+  {
+    id: 1,
+    question: "What is $EXTAI?",
+    answer:
+      "$EXTAI is a groundbreaking meme coin project on the Solana blockchain, based on the intriguing concept that Elon could be something more than just human - what if he's actually an extraterrestrial AI entity? This isn't just another presale in 2025; it's your opportunity to become part of a pioneering movement that merges the future of blockchain technology with the capabilities of artificial intelligence. Get ready to embrace a new era with $EXTAI!",
+  },
+  {
+    id: 2,
+    question: "How do I participate in staking?",
+    answer:
+      "Staking is incredibly simple! Just link your wallet in the staking section, and then choose the amount you wish to stake.",
+  },
+  {
+    id: 3,
+    question: "When does the PRESALE end?",
+    answer:
+      "The presale will conclude once the target funding is reached or when we officially announce its end. Rest assured, you'll get all the latest updates and key information through our Telegram and X (formerly Twitter) channels. Don't wait too long - secure your place in this exciting project before it's too late!",
+  },
+  {
+    id: 4,
+    question: "On which exchange will the launch take place?",
+    answer:
+      "The launch will take place on Rydium, and you can track the progress and price on platforms like Dextool or Dexscreener. Be sure to follow along as the excitement builds - this is a launch you how not want to miss!",
+  },
+  {
+    id: 5,
+    question: "What's next for $EXTAI?",
+    answer:
+      "$EXTAI isn't just about the present - it's about shaping the future. As a holder, you'll gain access to exclusive insights collected by our AI agent, revealing valuable information that will influence the development of both blockchain and AI technologies. Our goal is to build a thriving community while pushing the limits of what's possible with these technologies. Join us in this journey into the future!",
+  },
+];
+
 
 
 

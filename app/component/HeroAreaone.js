@@ -9,9 +9,10 @@ import image2 from './image/image13.png';
 import image3 from './image/image14.gif';
 import image4 from './image/image15.png';
 import image22 from './image/image22.png';
+import image23 from './image/image23.png';
 
 
-const HeroArea = () => {
+const HeroAreaone = () => {
     const heroRef = useRef(null);
     const textRef = useRef(null);
     const buttonRef = useRef(null);
@@ -212,8 +213,8 @@ const HeroArea = () => {
                     </div>
                   </div>
                   <div className='flex-1'>
-                    <div className=' sm:pl-[40px] md:pl-[70px] lg:pl-[90px] xl:pl-[120px] 2xl:pl-[151px]'>
-                      <div className='backgroundndpadding  py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] px-[24px] sm:px-[32px] md:px-[36px] lg:px-[40px] xl:px-[48px] 2xl:px-[67px] relative'>
+                    <div className=' sm:pl-[40px] md:pl-[70px] lg:pl-[90px] xl:pl-[120px] 2xl:pl-[151px] w-full'>
+                      <div className='backgroundndpadding  pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[29px] relative pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[58px]'>
 
                           <div className='flex items-center justify-center flex-col gap-[8px] md:gap-[12px] xl:gap-[16px] absolute right-0 top-[50%] transform translate-x-1/2 -translate-y-1/2'>
                             <Link href="/">
@@ -240,98 +241,61 @@ const HeroArea = () => {
                               </svg>
                             </div>
                           </div>
-                          <div className='flex justify-center flex-col xl:gap-0 gap-[2px] lg:gap-[20px] mt-[11px] sm:mt-[12px] md:mt-[13px] lg:mt-[14px] xl:mt-[15px] 2xl:mt-[16px] p-[13px] sm:p-[14px] md:p-[15px] lg:p-[16px] xl:p-[20px] 2xl:p-[22.5px] bg-[#EFF2F9] rounded-[10px] md:rounded-[12px] xl:rounded-[15.929px] mb-[13px] sm:mb-[14px] md:mb-[15px] lg:mb-[16px] xl:mb-[20px] 2xl:mb-[24px] border-[1px] border-[#646F82] relative'>
-
-                            <h1 className='flex justify-center items-center bueyextat text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>BUY $EXTAI PRESALE</h1>
-
-                              <div className='flex justify-center items-center gap-[10px] sm:gap-[12px] xl:gap-[15px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19px] pb-[7px] sm:pb-[8px] md:pb-[9px] lg:pb-[10px] xl:pb-[11px] 2xl:pb-[12.5px]'>
-
-                              <h1 className=''>
-                                <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
-                                  {String(time.days).padStart(2, '0')}
-                                </h1>
-                              </h1>
-                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
-                              <h1 className=''>
-                                
-                                <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
-                                  {String(time.hours).padStart(2, '0')}
-                                </h1>
-                              </h1>
-                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
-                              <h1 className=''>
-                                <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
-                                  {String(time.minutes).padStart(2, '0')}
-                                </h1>
-                              </h1>
-                              <p className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>:</p>
-                              <h1 className=''>    
-                                <h1 className='timeing text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]'>
-                                  {String(time.seconds).padStart(2, '0')}
-                                </h1>
-                              </h1>
-                              </div>
-                              {/* minutesecton */}
-                            <div className='flex justify-between items-center'>
-                              <h1 className='flex flex-col justify-center items-center'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Days</h2>
-                              </h1>
-                              <h1 className='flex flex-col justify-center items-center'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Hours</h2>
-                              </h1>
-                              <h1 className='flex flex-col justify-center items-center'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Minutes</h2>
-                              </h1>
-                              <h1 className='flex flex-col justify-center items-center'>
-                                <h2 className='dayingstyline text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Seconds</h2>
-                              </h1>
-                              </div>
-                              
-                            
+                          <div className='flex justify-center flex-col xl:gap-0 gap-[2px] lg:gap-[20px] mt-[11px] sm:mt-[12px] md:mt-[13px] lg:mt-[14px] xl:mt-[15px] 2xl:mt-[16px] p-[14px] sm:p-[15px] md:p-[16px] lg:p-[20px] xl:p-[24px] 2xl:p-[27px] bg-[#EFF2F9] rounded-[10px] md:rounded-[12px] xl:rounded-[15.929px] mb-[13px] sm:mb-[14px] md:mb-[15px] lg:mb-[16px] xl:mb-[20px] 2xl:mb-[24px] border-[1px] border-[#646F82] relative'>
+                              <div className='flex justify-between items-center gap-[10px] gap-[12px] '>
+                                <div className='flex items-center flex-col justify-center gap-[6px] sm:gap-[8px] xl:gap-[12px]'>
+                                    <div className='currentpages text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Current Staking</div>
+                                    <h2 className='extras text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]'>0 $EXTAI</h2>
+                                </div>
+                                <div className='flex items-center flex-col justify-center gap-[6px] sm:gap-[8px] xl:gap-[12px]'>
+                                    <div className='currentpages text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Daily Interest</div>
+                                    <h2 className='extras text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]'>0 $EXTAI</h2>
+                                </div>
+                                <div className='flex items-center flex-col justify-center gap-[6px] sm:gap-[8px] xl:gap-[12px]'>
+                                    <div className='currentpages text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Average APY</div>
+                                    <h2 className='extras text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]'>90%</h2>
+                                </div>
+                                <div className='flex items-center flex-col justify-center gap-[6px] sm:gap-[8px] xl:gap-[12px]'>
+                                    <div className='currentpages text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Rewards on Launch</div>
+                                    <h2 className='extras text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]'>$0</h2>
+                                </div>
+                            </div> 
                           </div>
-                          <div className='overflow-hidden'>
+                          <div className='flex justify-center items-center flex-col'>
                           <div className='ratingre text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16.3px]'>
-                          $EXTAIL Sold: 3.805.500
+                          My Staking
                         </div>
 
-                            <div className='lineone  p-[1.41px] relative mb-[12px] sm:mb-[13px] md:mb-[14px] lg:mb-[14px] xl:mb-[15px] 2xl:mb-[16px]'>
-                                  <h3 className='untilprice text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] py-[6px] sm:py-[7px] xl:py-[9.557px]'>UNTIL PRICE RISE</h3>
+                            <Image className='' src={image23} alt=''/>
+                            <div className='flex justify-between items-center pb-[16px] sm:pb-[20px] md:pb-[24px] lg:pb-[32px] xl:pb-[36px] 2xl:pb-[43px]'>
+                                <h2 className='extaiscas text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px]'>0$ $EXTAI</h2>
                             </div>
-                            <div className='flex justify-between items-center pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px]'>
-                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Purchased $$EXTAIL= 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[22px]' viewBox='0 0 26 25' fill='none'>
-                                <path d='M12.5054 8.21667V9.20915M12.5054 11.6904V16.1566M12.5054 22.1115C17.9868 22.1115 22.4304 17.6679 22.4304 12.1866C22.4304 6.70526 17.9868 2.26175 12.5054 2.26175C7.02408 2.26175 2.58057 6.70526 2.58057 12.1866C2.58057 17.6679 7.02408 22.1115 12.5054 22.1115Z' stroke='white' stroke-width='1.78648' stroke-linecap='round' stroke-linejoin='round'/>
-                                </svg></div>
-                                <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Stakeable $EXTAIL= 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[22px]' viewBox='0 0 26 25' fill='none'>
-                                <path d='M12.5054 8.21667V9.20915M12.5054 11.6904V16.1566M12.5054 22.1115C17.9868 22.1115 22.4304 17.6679 22.4304 12.1866C22.4304 6.70526 17.9868 2.26175 12.5054 2.26175C7.02408 2.26175 2.58057 6.70526 2.58057 12.1866C2.58057 17.6679 7.02408 22.1115 12.5054 22.1115Z' stroke='white' stroke-width='1.78648' stroke-linecap='round' stroke-linejoin='round'/>
-                              </svg></div>
+
+                            <div className='w-full flex justify-start items-start flex-col'>
+                                <label htmlFor="btfd-wallet" className='btfdinwalet text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] pb-[6px] lg:pb-[8px]'>$BTFD in wallet <span className='!text-[#fff]'>0</span></label>
+
+                                <div className='w-full backgroundimae flex justify-between items-center h-[50px] px-[11px] sm:px-[12px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px]'>
+                                    <input id="btfd-wallet" className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] placeholder:text-[#000]' type='email' placeholder='00.00'/>
+                                    <h2 className='extaling text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px]'>$EXTAI</h2>
+                                </div>
+                                <div className='flex justify-between items-center w-full md:mt-[6px] xl:mt-[10px]'>
+                                    <button className='stakecansa p-[6px] xl:p-[8px] rounded-[2px] xl:rounded-[4px]'>Max can stake 0</button>
+                                    <button className='stakecansa p-[6px] xl:p-[8px] rounded-[2px] xl:rounded-[4px]'>Max can Unstake 0</button>
+                                </div>
                             </div>
                             
-                          <div className='flex justify-center items-center gap-[12px] md:gap-[16px] xl:gap-[21px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[28px] sm:flex-row flex-col'>
-                              <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer'>
-                                  BUY WITH SOLANA
+                          <div className='flex justify-center items-center gap-[12px] md:gap-[16px] xl:gap-[21px] sm:flex-row flex-col w-full pt-[16px] sm:pt-[20px] md:pt-[24px] lg:pt-[32px] xl:pt-[36px] 2xl:pt-[43px]'>
+                              <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[21px] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[27px] cursor-pointer !text-[#000] !hover:text-[#fff]'>
+                                  Stake
                               </button>
-                              <button className='flex-1 w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] borderlinisinsa cursor-pointer'>
-                                  Buy with USDC
+                              <button className='flex-1 w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[21px] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[27px] borderlinisinsa cursor-pointer '>
+                              unstake
                               </button>
                           </div>
-                          <div className='md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px]'>
-                            <button className='flex-1 borderlinisinsassing w-full py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] cursor-pointer !text-[#000] mt-[12px] sm:mt-[13px] md:mt-[14px] lg:mt-[15px] xl:mt-[16px] 2xl:mt-[18px] '>
-                              connect wallet
-                            </button>
                           </div>
-                          </div>
-                            <div className='donthavwallet pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[23.16px] pb-[4px] md:pb-[5px] lg:pb-[6px] xl:pb-[7px] 2xl:pb-[8px] cursor-pointer !text-[#353535] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>
-                            Don&apos;t have a wallet?
-                          </div>
-
-                          <div className='flex items-center justify-center gap-[8px] md:gap-[10px] xl:gap-[12px] herosectionpowerby '><span className='!text-[461B0F] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] !text-[#461B0F]'>Powered by</span>
                           
-                            <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[26px] aspect-square' src={image22} alt=''/>
-                            <span className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>PresaleShild</span>
-                          </div>
                       </div>
-                      <div className='truestanssafety text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[23px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] pb-[7] md:pb-[9px] xl:pb-[12px]'>trust and safety audits</div>
-                        <div className='flex justify-center items-center gap-[10px] md:gap-[14px] xl:gap-[19]'>
+                      <div className='flex justify-center items-center gap-[10px] md:gap-[14px] xl:gap-[19] pt-[20px] xl:pt-[24px]'>
 
                         <div className='svgcolokrchange duration-300 h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[70px] w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[70px] cursor-pointer group !rounded-[5px] !sm:rounded-auto'>
                         <svg className="w-[15px] sm:w-[16px] md:w-[20px] lg:w-[24px] xl:w-[32px] 2xl:w-[36px]" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +342,6 @@ const HeroArea = () => {
                         </div>
                         
                         </div>
-                        
                       </div>
                       
                   </div>
@@ -388,4 +351,4 @@ const HeroArea = () => {
     );
 };
 
-export default HeroArea;
+export default HeroAreaone;

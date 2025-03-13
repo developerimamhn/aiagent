@@ -1,9 +1,12 @@
+'use client'
+
+
 import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import image1 from './image/dff030388a8640ddfbc3e7588ae56077.gif';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import  AnimatedSVG  from './AnimatedSVG'
+import  AnimatedSVG  from './AnimatedSVG';
 
 
 const Pagefive = () => {
@@ -51,18 +54,18 @@ const Pagefive = () => {
       },
       scrollTrigger: {
         trigger: numberRef.current,
-        start: "top 80%", // Animation starts when element is 80% in viewport
+        start: "top 80%",
         toggleActions: "play none none none",
       },
     });
 
-    return () => animation.kill(); // Cleanup on unmount
+    return () => animation.kill(); 
   }, []);
 
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    setAnimate(true);  // Start animation when component mounts
+    setAnimate(true);
   }, []);
 
 

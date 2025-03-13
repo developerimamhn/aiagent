@@ -1,11 +1,14 @@
 import React from "react";
 import NavBar from "../component/NavBar";
+import HeroAreaone from "../component/HeroAreaone";
+import Body from '../component/Body';
 
 const Page = () => {
   return (
-    <div className='container mx-auto'>
+    <div className=''>
       <NavBar/>
-      <div className='text-[50px] text-[#000]'>trasn</div>
+      <HeroAreaone/>
+      <Body/>
     </div>
   );
 };

@@ -102,11 +102,132 @@ const Pagetow = () => {
       
           return () => mm.revert(); // Cleanup GSAP animations on unmount
         }, []);
+
+
+        useEffect(() => {
+          const mm = gsap.matchMedia();
+      
+          mm.add("(min-width: 1024px)", () => {
+            // Desktop Animation
+            return gsap.from(".section21", {
+              opacity: 0,
+              y: 250,
+              duration: 2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section21",
+                start: "top 50%",
+                end: "top 30%",
+                scrub: 2,
+                markers: false,
+              },
+            });
+          });
+      
+          mm.add("(max-width: 1023px)", () => {
+            // Tablet & Mobile Animation
+            return gsap.from(".section21", {
+              opacity: 0,
+              y: 100, // Less movement on small screens
+              duration: 1.5,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section21",
+                start: "top 75%", // Trigger later for better visibility
+                end: "top 50%",
+                scrub: 1,
+                markers: false,
+              },
+            });
+          });
+      
+          return () => mm.revert(); // Cleanup GSAP animations on unmount
+        }, []);
+        useEffect(() => {
+          const mm = gsap.matchMedia();
+      
+          mm.add("(min-width: 1024px)", () => {
+            // Desktop Animation
+            return gsap.from(".section23", {
+              opacity: 0,
+              y: 250,
+              duration: 2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section23",
+                start: "top 50%",
+                end: "top 30%",
+                scrub: 2,
+                markers: false,
+              },
+            });
+          });
+      
+          mm.add("(max-width: 1023px)", () => {
+            // Tablet & Mobile Animation
+            return gsap.from(".section23", {
+              opacity: 0,
+              y: 100, // Less movement on small screens
+              duration: 1.5,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section23",
+                start: "top 75%", // Trigger later for better visibility
+                end: "top 50%",
+                scrub: 1,
+                markers: false,
+              },
+            });
+          });
+      
+          return () => mm.revert(); // Cleanup GSAP animations on unmount
+        }, []);
+
+
+        useEffect(() => {
+          const mm = gsap.matchMedia();
+      
+          mm.add("(min-width: 1024px)", () => {
+            // Desktop Animation
+            return gsap.from(".section24", {
+              opacity: 0,
+              y: 250,
+              duration: 2,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section24",
+                start: "top 50%",
+                end: "top 30%",
+                scrub: 2,
+                markers: false,
+              },
+            });
+          });
+      
+          mm.add("(max-width: 1023px)", () => {
+            // Tablet & Mobile Animation
+            return gsap.from(".section24", {
+              opacity: 0,
+              y: 100, // Less movement on small screens
+              duration: 1.5,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: ".section24",
+                start: "top 75%", // Trigger later for better visibility
+                end: "top 50%",
+                scrub: 1,
+                markers: false,
+              },
+            });
+          });
+      
+          return () => mm.revert(); // Cleanup GSAP animations on unmount
+        }, []);
       
 
 
     return (
-        <div className='backgroundimage section2 ' id="Techmap">
+        <div className='backgroundimage  ' id="Techmap">
             <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px] sm:mt-[0]'>
                 <h1 className='roadmapsectojn text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[100px]'>$EXTAI Roadmap</h1>
                 <div className='px-[50px] sm:px-[0] lg:px-[110px] xl:px-[170px] 2xl:px-[200px] relative flex flex-col gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[90px] 2xl:gap-[100px]'>
@@ -132,7 +253,7 @@ const Pagetow = () => {
                   <path d="M70.7095 134.713L70.7095 126.228" stroke="#141B34" stroke-width="4.5" stroke-linecap="round"/>
                   </svg>
 
-                    <div className='flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
+                    <div className='section2 flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                       <div className='relative flex-1'>
                       <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="0 0 522 306" fill="none">
                         <g filter="url(#filter0_d_1040_2055)">
@@ -157,7 +278,7 @@ const Pagetow = () => {
                       </div>
                       <div className='flex-1 sm:block hidden'></div>
                     </div>
-                    <div className='flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
+                    <div className='section21 flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                     <div className='flex-1 sm:block hidden'></div>
                       <div className='relative flex-1'>
                       <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="0 0 522 306" fill="none">
@@ -183,7 +304,7 @@ const Pagetow = () => {
                       </div>
                       
                     </div>
-                    <div className='flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
+                    <div className='section23 flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                       <div className='relative flex-1'>
                       <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="0 0 522 306" fill="none">
                         <g filter="url(#filter0_d_1040_2055)">
@@ -208,7 +329,7 @@ const Pagetow = () => {
                       </div>
                       <div className='flex-1 sm:block hidden'></div>
                     </div>
-                    <div className='flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
+                    <div className='section24 flex justify-center items-center gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                     <div className='flex-1 sm:block hidden'></div>
                       <div className='relative flex-1'>
                       <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="0 0 522 306" fill="none">
