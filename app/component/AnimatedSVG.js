@@ -54,6 +54,11 @@ const AnimatedSVG = () => {
         enabled: false,
       },
     },
+    dataLabels: {
+      style: {
+        colors: ['#ffffff'], // Set text color to white
+      },
+    },
   };
 
   const series = [60, 50, 40, 35, 30];  // Data points
@@ -110,7 +115,7 @@ const AnimatedSVG = () => {
         </div>
         <div className='w-full h-full p-2 relative'>
         <Chart options={options} series={series} type="polarArea" className='w-full' />
-        <svg className='absolute z-999 top-[50%] left-[50%] sm:left-[49%] transform translate-x-[-50%] translate-y-[-50%] w-1/5' viewBox="0 0 183 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='absolute z-10 top-[50%] left-[50%] sm:left-[49%] transform translate-x-[-50%] translate-y-[-50%] w-1/5' viewBox="0 0 183 183" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="91.8596" cy="91.8596" r="90.9817" fill="#202022"/>
         </svg>
       </div>

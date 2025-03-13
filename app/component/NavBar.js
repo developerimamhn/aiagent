@@ -3,11 +3,10 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, createContext, useContext  } from 'react';
 import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
 import usimage from './image/us.png';
-import bnimage from './image/bn.png';
 import chimage from './image/ch.jpg';
 
 
@@ -82,7 +81,6 @@ const NavBar = () => {
   };
   const options = [
     { image: usimage,},
-    { image: bnimage,},
     { image: chimage,},
   ];
 

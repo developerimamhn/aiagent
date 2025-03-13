@@ -117,7 +117,7 @@ const Pagesix = () => {
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image2} alt='loading'/>
                         </p>
                         <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Set up a Wallet: </h2>
-                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">Token Launch & Meme Expansion: $EXTAI launches on Raydium (Solana). Viral meme campaigns and influencer collaborations to boost visibility.</p>
+                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">To get $EXTAI, you will need either Solana (SOL) or USDC in your wallet. You can purchase these cryptocurrencies on exchanges like Binance or Coinbase and transfer them to your Phantom Wallet.</p>
                     </div>
                     
                 </div>
@@ -126,8 +126,8 @@ const Pagesix = () => {
                         <p className='onetext transition-all  xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image3} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Set up a Wallet: </h2>
-                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">I Meme Growth: Rewards for meme creators. Regular meme campaigns to boost excitement.</p>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Fund Your Wallet:</h2>
+                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">After connecting your wallet, go to the Presale section and choose how much Solana (SOL) or USDC you want to exchange for $EXTAI tokens. The presale platform will automatically calculate the amount of $EXTAI you will receive.</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-1/2 ml-[11px] sm:block hidden' viewBox="0 0 337 144" fill="none">
                         <path d="M2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5V0.5ZM324.576 142.774C325.162 143.36 326.111 143.36 326.697 142.774L336.243 133.228C336.829 132.642 336.829 131.693 336.243 131.107C335.657 130.521 334.708 130.521 334.122 131.107L325.637 139.592L317.151 131.107C316.565 130.521 315.616 130.521 315.03 131.107C314.444 131.693 314.444 132.642 315.03 133.228L324.576 142.774ZM2 3.5H6.91566V0.5H2V3.5ZM16.747 3.5H26.5783V0.5H16.747V3.5ZM36.4096 3.5H46.241V0.5H36.4096V3.5ZM56.0723 3.5H65.9036V0.5H56.0723V3.5ZM75.7349 3.5H85.5662V0.5H75.7349V3.5ZM95.3976 3.5H105.229V0.5H95.3976V3.5ZM115.06 3.5H124.892V0.5H115.06V3.5ZM134.723 3.5H144.554V0.5H134.723V3.5ZM154.386 3.5H164.217V0.5H154.386V3.5ZM174.048 3.5H183.879V0.5H174.048V3.5ZM193.711 3.5H203.542V0.5H193.711V3.5ZM213.373 3.5H223.205V0.5H213.373V3.5ZM233.036 3.5H242.867V0.5H233.036V3.5ZM252.699 3.5H262.53V0.5H252.699V3.5ZM272.361 3.5H282.193V0.5H272.361V3.5ZM292.024 3.5H296.94V0.5H292.024V3.5ZM296.94 3.5C298.758 3.5 300.533 3.67822 302.249 4.0177L302.831 1.07473C300.925 0.69753 298.954 0.5 296.94 0.5V3.5ZM312.05 8.07999C315.016 10.066 317.57 12.6204 319.557 15.5869L322.049 13.9179C319.845 10.6256 317.011 7.79127 313.719 5.58709L312.05 8.07999ZM323.619 25.3874C323.958 27.1034 324.137 28.8786 324.137 30.6968H327.137C327.137 28.682 326.939 26.7119 326.562 24.8052L323.619 25.3874ZM324.137 30.6968V35.3225H327.137V30.6968H324.137ZM324.137 44.5739V53.8253H327.137V44.5739H324.137ZM324.137 63.0767V72.3281H327.137V63.0767H324.137ZM324.137 81.5794V90.8308H327.137V81.5794H324.137ZM324.137 100.082V109.334H327.137V100.082H324.137ZM324.137 118.585V127.836H327.137V118.585H324.137ZM324.137 137.088V141.713H327.137V137.088H324.137Z" fill="#202022"/>
@@ -143,8 +143,8 @@ const Pagesix = () => {
                         <p className='onetext transition-all xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image4} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Set up a Wallet: </h2>
-                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">Meme Dominance: $EXTAI rises as a top meme coin globally, powered by AI-driven content and continuous community rewards.</p>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Connect Your Wallet: </h2>
+                        <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">Once you have entered the desired amount, confirm the transaction, and the $EXTAI tokens will be sent directly to your connected wallet.</p>
                     </div>
                     
                 </div>
@@ -153,7 +153,7 @@ const Pagesix = () => {
                         <p className='onetext transition-all xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image5} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Set up a Wallet: </h2>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Exchange Solana or USDC for $EXTAI: </h2>
                         <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">If you do not already have one, download and set up Phantom Wallet (available as a browser extension or mobile app). Be sure to secure your wallet with a strong password and back up your recovery phrase.</p>
                     </div>
                     <></>
