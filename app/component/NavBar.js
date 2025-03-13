@@ -114,8 +114,11 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#Home" onClick={(e) => handleScroll(e, "Home")}>
                     Home
                     </a>
-                    <a className="Link-manu-bar" href="#about " onClick={(e) => handleScroll(e, "About ")}>
+                    {/* <a className="Link-manu-bar" href="#about " onClick={(e) => handleScroll(e, "about ")}>
                     About 
+                    </a> */}
+                    <a className="Link-manu-bar" href="#about" onClick={(e) => handleScroll(e, "about")}>
+                    About
                     </a>
                     <a className="Link-manu-bar" href="#Techmap" onClick={(e) => handleScroll(e, "Techmap")}>
                     Techmap
