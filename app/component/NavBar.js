@@ -129,9 +129,9 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#FAQ" onClick={(e) => handleScroll(e, "FAQ")}>
                      FAQ
                     </a>
-                    <Link className="Link-manu-bar" href="/staking">
-                        Staking
-                    </Link>
+                    <a className="Link-manu-bar" href="#staking" onClick={(e) => handleScroll(e, "staking")}>
+                    staking
+                    </a>
                     <a className="Link-manu-bar" href="#whitepaper" onClick={(e) => handleScroll(e, "whitepaper")}>
                     whitepaper
                     </a>

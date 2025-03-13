@@ -18,13 +18,25 @@ const faqs = [
     },
     {
       id: 2,
-      question: "How does $EXTAI work?",
+      question: "How do I participate in staking?",
       answer:
         "$EXTAI utilizes advanced machine learning algorithms and blockchain technology to provide AI-driven solutions in various sectors.",
     },
     {
       id: 3,
-      question: "What are the benefits of investing in $EXTAI?",
+      question: "When does the PRESALE end?",
+      answer:
+        "Early investors gain exclusive access to AI technology, partnerships, and unique token benefits that enhance their investment portfolio.",
+    },
+    {
+      id: 4,
+      question: "How do I participate in staking?",
+      answer:
+        "$EXTAI utilizes advanced machine learning algorithms and blockchain technology to provide AI-driven solutions in various sectors.",
+    },
+    {
+      id: 5,
+      question: "When does the PRESALE end?",
       answer:
         "Early investors gain exclusive access to AI technology, partnerships, and unique token benefits that enhance their investment portfolio.",
     },
@@ -57,15 +69,12 @@ const Pageseven = () => {
         return () => ctx.revert();
       }, []);
     return (
-        <div className='sm:section7' id='FAQ'>
-            <div className='container mx-auto pb-[50px] sm:pb-[70px] md:pb-[100px] lg:pb-[130px] xl:pb-[160px] 2xl:pb-[190px]'>
+        <div className='section7' id='FAQ'>
+            <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px]'>
                 <div className='relative mt-[40px] sm:mt-[40px] md:mt-[50px] lg:mt-[66px] xl:mt-[80px] 2xl:mt-[100px] pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[73px]'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className='w-[250px] sm:w-[300px] md:w-[330px] lg:w-[350px] xl:w-[380px] 2xl:w-[497px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' width="497" height="111" viewBox="0 0 497 111" fill="none">
-                    <path d="M9.11975 16.6303C10.9031 7.03 19.3582 0.12086 29.1214 0.285909L470.001 7.73909C480.044 7.90887 488.404 15.5016 489.536 25.4822L496.686 88.5254C498.079 100.811 488.103 111.405 475.757 110.752L19.12 86.5862C7.05518 85.9478 -1.69323 74.8399 0.513303 62.9615L9.11975 16.6303Z" fill="#E85400"/>
-                    </svg>
-                    <h2 className='howtobue text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[57px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>MIND OG PEPE FAQ</h2>
+                    <h2 className='howtobue text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px]'>FAQ</h2>
                 </div>
-                <div className='px-[60px] sm:px-[90px] md:px-[120px] lg:px-[150px] xl:px-[170px] 2xl:px-[200px] mt-[40px] sm:mt-[40px] md:mt-[50px] lg:mt-[66px] xl:mt-[80px] 2xl:mt-[100px]'>
+                <div className='px-[60px] sm:px-[90px] md:px-[120px] lg:px-[150px] xl:px-[170px] 2xl:px-[200px] :mt-[20px] md:mt-[30px] lg:mt-[46px] xl:mt-[50px] 2xl:mt-[60px]'>
                     <div className='flex flex-col justify-center items-center '>
                     <div className="w-full flex flex-col gap-6">
 
