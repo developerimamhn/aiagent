@@ -75,7 +75,7 @@ const Pagetow = () => {
               ease: "power3.out",
               scrollTrigger: {
                 trigger: ".section2",
-                start: "top 50%",
+                start: "top 70%",
                 end: "top 30%",
                 scrub: 2,
                 markers: false,
@@ -116,7 +116,7 @@ const Pagetow = () => {
               ease: "power3.out",
               scrollTrigger: {
                 trigger: ".section21",
-                start: "top 50%",
+                start: "top 70%",
                 end: "top 30%",
                 scrub: 2,
                 markers: false,
@@ -155,7 +155,7 @@ const Pagetow = () => {
               ease: "power3.out",
               scrollTrigger: {
                 trigger: ".section23",
-                start: "top 50%",
+                start: "top 70%",
                 end: "top 30%",
                 scrub: 2,
                 markers: false,
@@ -196,7 +196,7 @@ const Pagetow = () => {
               ease: "power3.out",
               scrollTrigger: {
                 trigger: ".section24",
-                start: "top 50%",
+                start: "top 70%",
                 end: "top 30%",
                 scrub: 2,
                 markers: false,

@@ -116,7 +116,7 @@ const Pagesix = () => {
                         <p className='onetext transition-all xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image2} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Set up a Wallet: </h2>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Fund Your Wallet:</h2>
                         <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">To get $EXTAI, you will need either Solana (SOL) or USDC in your wallet. You can purchase these cryptocurrencies on exchanges like Binance or Coinbase and transfer them to your Phantom Wallet.</p>
                     </div>
                     
@@ -126,7 +126,7 @@ const Pagesix = () => {
                         <p className='onetext transition-all  xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image3} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Fund Your Wallet:</h2>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Connect Your Wallet: </h2>
                         <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">After connecting your wallet, go to the Presale section and choose how much Solana (SOL) or USDC you want to exchange for $EXTAI tokens. The presale platform will automatically calculate the amount of $EXTAI you will receive.</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-1/2 ml-[11px] sm:block hidden' viewBox="0 0 337 144" fill="none">
@@ -143,7 +143,7 @@ const Pagesix = () => {
                         <p className='onetext transition-all xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image4} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Connect Your Wallet: </h2>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Exchange Solana or USDC for $EXTAI:  </h2>
                         <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">Once you have entered the desired amount, confirm the transaction, and the $EXTAI tokens will be sent directly to your connected wallet.</p>
                     </div>
                     
@@ -153,7 +153,7 @@ const Pagesix = () => {
                         <p className='onetext transition-all xl:absolute -top-1/3 lg:-top-1/5 left-[20px] sm:left-[30px] xl:left-[40px] transform'>
                             <Image className='w-[40px] md:w-[50px] lg:w-[60px] xl:w-[80px] 2xl:w-[100px]' src={image5} alt='loading'/>
                         </p>
-                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] '>Exchange Solana or USDC for $EXTAI: </h2>
+                        <h2 className='getwallet group-hover:text-[#202022] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] !text-left'>Confirm and Complete Your Transaction: </h2>
                         <p className="paragonsectoin group-hover:text-[#616166] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px]  sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[22px] !text-left">If you do not already have one, download and set up Phantom Wallet (available as a browser extension or mobile app). Be sure to secure your wallet with a strong password and back up your recovery phrase.</p>
                     </div>
                     <></>
