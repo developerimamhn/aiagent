@@ -10,6 +10,7 @@ import image3 from './image/image19.png';
 import image4 from './image/image20.png';
 import image5 from './image/image21.png';
 import Image from 'next/image';
+import backgroundimage from './image/backgronhero.gif';
 
 const Pagesix = () => {
 
@@ -88,6 +89,8 @@ const Pagesix = () => {
 
     return (
         <div className='relative ' id="HowToBuy">
+          <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
+          <Image src={backgroundimage} alt="Background" objectFit="cover"  className='w-full h-full absolute top-0 left-0 z-[-3]'/>
             <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px] px-[24px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px]'>
             <div className='relative mt-[20px] sm:mt-[24px] md:mt-[32px] lg:mt-[36px] xl:mt-[40px] 2xl:mt-[50px]'>
                 <h2 className='howtobue text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] '>How can I get $EXTAI?</h2>

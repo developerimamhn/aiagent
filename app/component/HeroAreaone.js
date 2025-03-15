@@ -220,7 +220,7 @@ const HeroAreaone = () => {
                             <Link href="/">
                             <button className='buybuttonss w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Buy</button>
                             </Link>
-                            <Link href="/staking">
+                            <Link href="/stake">
                             <button className='buybuttonssddd w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Stake</button>
                             </Link>
                           </div>
@@ -278,7 +278,7 @@ const HeroAreaone = () => {
                                     <input id="btfd-wallet" className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] placeholder:text-[#000]' type='email' placeholder='00.00'/>
                                     <h2 className='extaling text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px]'>$EXTAI</h2>
                                 </div>
-                                <div className='flex justify-between items-center w-full md:mt-[6px] xl:mt-[10px]'>
+                                <div className='flex justify-between items-center w-full mt-[10px]'>
                                     <button className='stakecansa p-[6px] xl:p-[8px] rounded-[2px] xl:rounded-[4px]'>Max can stake 0</button>
                                     <button className='stakecansa p-[6px] xl:p-[8px] rounded-[2px] xl:rounded-[4px]'>Max can Unstake 0</button>
                                 </div>

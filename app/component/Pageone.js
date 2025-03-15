@@ -69,7 +69,7 @@ const Pageone = () => {
 
   }, []);
     return ( 
-        <div className='section1 relative z-[8] ' id="HowItWorks">
+        <div className=' relative z-[8] ' id="HowItWorks">
             <div className='py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px]'>
               <div className="scroll-container">
                   <div className="scroll-contents gap-[17px] sm:gap-[20px] md:gap-[25px] lg:gap-[30px] xl:gap-[40px] 2xl:gap-[51px]">

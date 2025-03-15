@@ -9,6 +9,8 @@ import image2 from './image/image13.png';
 import image3 from './image/image14.gif';
 import image4 from './image/image15.png';
 import image22 from './image/image22.png';
+import { useTranslation } from 'react-i18next';
+
 
 
 const HeroArea = () => {
@@ -16,6 +18,7 @@ const HeroArea = () => {
     const textRef = useRef(null);
     const buttonRef = useRef(null);
     const swiperRef = useRef(null);
+    const { t } = useTranslation();
 
     useEffect(() => {
         gsap.from(heroRef.current, {
@@ -121,16 +124,16 @@ const HeroArea = () => {
             <div className='container px-[24px] sm:px-[0] mx-auto pt-[64px] sm:pt-[72px] md:pt-[80px] lg:pt-[96px] xl:pt-[128px] 2xl:pt-[154px]'>
                 <div className='flex justify-between items-start sm:flex-row flex-col sm:gap-[0] gap-[40px] sm:pb-[0] pb-[25px]'>
                   <div className='flex-1'>
-                        <span className='savestaking text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>487% Staking rewards</span>
-                        <h3 className='elonmuxcoin text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[72px] pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16px]'>Elon eXtraterrestrial AI</h3>
-                        <p className='extaithefutere text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[23px] 2xl:text-[26px]'> $EXTAI &ndash; The Future is Now! Ever wondered if Elon is more than just human? Maybe he&rsquo;s an extraterrestrial AI! $EXTAI is not just a token &ndash; it&rsquo;s the first step into a new era of technology. Get in early and claim your piece of the future!</p>
+                        <span className='savestaking text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>{t('stakingReward')}</span>
+                        <h3 className='elonmuxcoin text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[72px] pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16px]'>{t('extraterrestrialAI')}</h3>
+                        <p className='extaithefutere text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[23px] 2xl:text-[26px]'>{t('extaTokenInfo')}</p>
                         <div className='flex items-center gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px] mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px] mb-[20px] sm:mb-[24px] md:mb-[32px] lg:mb-[36px] xl:mb-[40px] 2xl:mb-[43px]'>
                         <button className='w-[110px] sm:w-[120px] xl:w-[150px] 2xl:w-[190px] py-[10px] sm:py-[11px] md:py-[12px] lg:py-[13px] xl:py-[14px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[19px] borderlinisinsasss cursor-pointer'>
-                          Join us
+                        {t('joinUs')}
                         </button>
 
                         <button className='w-[110px] sm:w-[120px] xl:w-[150px] 2xl:w-[190px] py-[10px] sm:py-[11px] md:py-[12px] lg:py-[13px] xl:py-[14px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[19px] borderlinisinsa cursor-pointer'>
-                        Buy with Crypto
+                        {t('buyWithCrypto')}
                       </button>
 
                       </div>
@@ -142,7 +145,7 @@ const HeroArea = () => {
                       <div className='group absolute top-[44%] right-[14%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
                         <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
 
-                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='group-hover:opacity-100 opacity-0 duration-500 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="144.675" height="55.8838" rx="12" fill="white"/>
                       <g clip-path="url(#clip0_1017_1104)">
                       <path d="M23.79 29.7595H15.0785V27.598H26.3118C26.017 26.681 25.0673 25.8295 23.397 25.8295H15.2423C13.3755 25.8295 12.2948 26.5172 12.2948 28.0237V29.6285C12.2948 30.9385 13.4083 31.6917 15.0458 31.6917H23.8555V33.9842H12C12.2948 35.2287 13.2445 35.8837 14.9475 35.8837H23.8228C25.6895 35.8837 26.6065 35.1632 26.6065 33.624V32.0192C26.6065 30.611 25.5258 29.8577 23.79 29.7595Z" fill="black"/>
@@ -165,7 +168,7 @@ const HeroArea = () => {
                       <div className='group absolute top-[67%] right-[25%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
                         <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
 
-                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='group-hover:opacity-100 opacity-0 duration-500 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="145" height="53" rx="12" fill="white"/>
                         <path d="M37.7716 17.6428V12.7684H36.5V11.3764H40.8172V12.7684H39.4804V17.6428H37.7716Z" fill="black"/>
                         <path d="M41.4302 17.6428V11.3764H43.139V13.7212H45.3658V11.3764H47.0746V17.6428H45.3658V15.1144H43.139V17.6428H41.4302Z" fill="black"/>
@@ -191,7 +194,7 @@ const HeroArea = () => {
                       <div className='group absolute top-[65%] right-[50%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
                         <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
 
-                        <svg className='group-hover:opacity-100 opacity-0 duration-300 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='group-hover:opacity-100 opacity-0 duration-500 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 145 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="145" height="53" rx="12" fill="white"/>
                         <g clip-path="url(#clip0_1017_1143)">
                         <path d="M118.215 23.0108L116.831 20.3014L116.182 20.9758L115.749 23.0108H114.412L115.796 16.3924H117.133L116.541 19.2297L119.278 16.3924H121L117.857 19.499L119.787 23.0108H118.215ZM110.561 23.0082L108.793 18.5623L107.982 23.0082H106.831L108.023 16.4184H109.208L110.926 20.7061L111.713 16.4184H112.864L111.671 23.0082H110.561ZM102.633 22.9885L103.953 16.3874H105.228L103.907 22.9885H102.633ZM96.4203 22.9446L97.8239 16.4517H99.179L98.0438 21.7277H100.726L100.467 22.9446H96.4203ZM77.042 23.1408C76.2574 23.1408 75.6493 22.9348 75.2176 22.5227C74.7859 22.1107 74.5701 21.5487 74.5701 20.8367C74.5701 20.6719 74.5845 20.5238 74.6134 20.3925L75.3625 16.4275H76.5893L75.8485 20.3539C75.8252 20.4195 75.8136 20.5283 75.8136 20.6803C75.8136 21.0356 75.9257 21.3285 76.1498 21.559C76.3751 21.7895 76.6725 21.9047 77.0421 21.9047C77.8255 21.9047 78.3138 21.3878 78.5069 20.3539L79.2576 16.4275H80.4928L79.7354 20.3828C79.5423 21.3523 79.2254 22.0547 78.7849 22.4899C78.3443 22.9238 77.7634 23.1408 77.042 23.1408ZM93.1418 23.0501L92.9983 21.9213H90.5805L90.0144 23.0501H88.5868L92.0097 16.3926H93.5132L94.4423 23.0501H93.1418ZM92.5576 17.8099L91.1465 20.6737H92.896L92.5576 17.8099ZM85.4924 22.9909L84.788 20.6457H83.8063L83.3407 22.9909H82.0731L83.386 16.3882H85.9301C86.4543 16.3882 86.892 16.5648 87.2431 16.9179C87.5941 17.2711 87.7696 17.7152 87.7696 18.2501C87.7696 18.8366 87.6086 19.3412 87.2866 19.764C86.9658 20.1868 86.5613 20.4472 86.073 20.5451L86.8943 22.9909H85.4924ZM85.386 19.4082C85.7196 19.4082 85.9783 19.3128 86.1619 19.1221C86.3468 18.93 86.4392 18.6851 86.4392 18.3874C86.4392 18.1631 86.3631 17.9801 86.2108 17.8383C86.0597 17.6965 85.8859 17.6256 85.6894 17.6256H84.413L84.0556 19.4082H85.386ZM67.9636 23.0053L69.2535 16.3414H73.3937L73.1471 17.5903H70.2624L69.9901 18.9992H72.8148L72.5681 20.2481H69.7451L69.4556 21.7565H72.3403L72.1039 23.0053H67.9636ZM64.0282 22.9859L62.2911 18.5472L61.4948 22.9859H60.3643L61.5353 16.4069H62.6985L64.3859 20.6876L65.1588 16.4069H66.2894L65.1184 22.9859H64.0282Z" fill="black"/>
@@ -206,9 +209,31 @@ const HeroArea = () => {
 
 
                       </div>
-                      
-                      
 
+                      <div className='group absolute top-[60%] left-[5%] w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px] z-[1] flex justify-center items-center flex-col gap-[10px] lg:gap-[15px]'>
+                        <Image className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[24px] 2xl:w-[31px] cursor-pointer' src={image4} alt='loading'/>
+
+                        <svg className='group-hover:opacity-100 opacity-0 duration-500 w-[65px] lg:w-[85px] xl:w-[125px] 2xl:w-[145px]' viewBox="0 0 112 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="112" height="53" rx="12" fill="white"/>
+                      <g clip-path="url(#clip0_1040_1371)">
+                      <path d="M42.5 40.4489C42.5787 40.7558 42.8443 41.0694 43.2088 41.148H44.3105L44.3666 41.1702V43.95H45.0546V41.1702L45.117 41.148H46.2196C46.5882 41.053 46.8481 40.7558 46.9255 40.4489V40.4421H42.5V40.4489Z" fill="black"/>
+                      <path d="M49.3082 43.9578H51.9253C52.2894 43.8855 52.56 43.5647 52.6359 43.2542H48.5977C48.673 43.5648 48.9476 43.8855 49.3082 43.9578Z" fill="black"/>
+                      <path d="M49.3082 42.532H51.9253C52.2894 42.4602 52.56 42.1393 52.6359 41.8284H48.5977C48.673 42.1394 48.9476 42.4602 49.3082 42.532Z" fill="black"/>
+                      <path d="M49.3082 41.1443H51.9253C52.2894 41.0718 52.56 40.7511 52.6359 40.4404H48.5977C48.673 40.7511 48.9476 41.0718 49.3082 41.1443Z" fill="black"/>
+                      <path d="M55.2769 41.1377H57.6947C58.0592 41.0318 58.3652 40.7541 58.4398 40.4463H54.5992V42.5211H57.7426V43.2493L55.2769 43.2512C54.8905 43.3589 54.5629 43.6184 54.3994 43.9611L54.5992 43.9574H58.418V41.8313H55.2769V41.1377Z" fill="black"/>
+                      <path d="M63.5047 43.9583C63.848 43.8128 64.0327 43.561 64.1034 43.2665H61.0498L61.0517 40.4453L60.3672 40.4472V43.9583H63.5047Z" fill="black"/>
+                      <path d="M66.1721 41.1472H68.79C69.1536 41.0749 69.4241 40.754 69.5003 40.4436H65.4619C65.5374 40.7541 65.8118 41.0749 66.1721 41.1472Z" fill="black"/>
+                      <path d="M65.5664 41.834V43.957H66.2472V42.5435H68.7252V43.957H69.4055V41.8377L65.5664 41.834Z" fill="black"/>
+                      <path d="M56.0016 33.5032L59.4388 14.1722C62.715 14.1722 63.7485 14.5314 63.8977 15.9978C63.8977 15.9978 66.0955 15.1783 67.204 13.514C62.8783 11.5096 58.532 11.4192 58.532 11.4192L55.9959 14.5082L56.0016 14.5078L53.4654 11.4187C53.4654 11.4187 49.119 11.5092 44.7939 13.5136C45.9015 15.178 48.1002 15.9974 48.1002 15.9974C48.2502 14.5309 49.2824 14.1717 52.5367 14.1694L56.0016 33.5032Z" fill="black"/>
+                      <path d="M56.0005 10.527C59.4971 10.5003 63.4995 11.0679 67.5967 12.8537C68.1443 11.868 68.2851 11.4324 68.2851 11.4324C63.8062 9.66045 59.6119 9.05403 56 9.03882C52.3883 9.05403 48.1941 9.66055 43.7158 11.4324C43.7158 11.4324 43.9156 11.969 44.4037 12.8537C48.5002 11.0679 52.5032 10.5003 56 10.527H56.0005Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1040_1371">
+                      <rect width="27" height="34.9222" fill="white" transform="translate(42.5 9.03882)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      </div>
                     </div>
                   </div>
                   <div className='flex-1'>
@@ -219,7 +244,7 @@ const HeroArea = () => {
                             <Link href="/">
                             <button className='buybuttonss w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Buy</button>
                             </Link>
-                            <Link href="/staking">
+                            <Link href="/stake">
                             <button className='buybuttonssddd w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Stake</button>
                             </Link>
                           </div>
@@ -297,7 +322,7 @@ const HeroArea = () => {
                             <div className='lineone  p-[1.41px] relative mb-[12px] sm:mb-[13px] md:mb-[14px] lg:mb-[14px] xl:mb-[15px] 2xl:mb-[16px]'>
                                   <h3 className='untilprice text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] py-[6px] sm:py-[7px] xl:py-[9.557px]'>UNTIL PRICE RISE</h3>
                             </div>
-                            <div className='flex justify-between items-center pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px]'>
+                            <div className='flex justify-between items-center pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] gap-10 sm:gap-0'>
                                 <div className='flex gap-[4px] lg:gap-[6px] items-center countering text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>Purchased $$EXTAIL= 0 <svg xmlns='http://www.w3.org/2000/svg' className='w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[22px]' viewBox='0 0 26 25' fill='none'>
                                 <path d='M12.5054 8.21667V9.20915M12.5054 11.6904V16.1566M12.5054 22.1115C17.9868 22.1115 22.4304 17.6679 22.4304 12.1866C22.4304 6.70526 17.9868 2.26175 12.5054 2.26175C7.02408 2.26175 2.58057 6.70526 2.58057 12.1866C2.58057 17.6679 7.02408 22.1115 12.5054 22.1115Z' stroke='white' stroke-width='1.78648' stroke-linecap='round' stroke-linejoin='round'/>
                                 </svg></div>

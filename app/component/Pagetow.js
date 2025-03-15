@@ -6,6 +6,7 @@ import Image from 'next/image';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import backgroundimage from './image/backgronhero.gif';
 
 import image1 from './image/image7.png';
 import image2 from './image/image8.png';
@@ -227,7 +228,9 @@ const Pagetow = () => {
 
 
     return (
-        <div className='backgroundimage  ' id="Techmap">
+        <div className='backgroundimage  relative' id="Roadmap">
+          <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
+          <Image src={backgroundimage} alt="Background" objectFit="cover"  className='w-full h-full absolute top-0 left-0 z-[-3]'/>
             <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px] sm:mt-[0]'>
                 <h1 className='roadmapsectojn text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[100px]'>$EXTAI Roadmap</h1>
                 <div className='px-[50px] sm:px-[0] lg:px-[110px] xl:px-[170px] 2xl:px-[200px] relative flex flex-col gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[90px] 2xl:gap-[100px]'>

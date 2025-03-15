@@ -5,10 +5,12 @@ import Pagethree from './Pagethree';
 import Pagefive from './Pagefive';
 import Pagesix from './Pagesix';
 import Pageseven from './Pageseven';
+import backgroundimage from './image/backgronhero.gif';
+import Image from 'next/image';
 
 const Body = () => {
     return (
-        <div>
+        <div className=''>
             <Pageone/>
             <Pagethree/>
             <Pagefive/>

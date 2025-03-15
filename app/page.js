@@ -5,6 +5,7 @@ import Header from "./component/Header";
 import Body from "./component/Body";
 import Footer from "./component/Footer";
 import React, { useEffect, useState } from "react";
+import i18n from './i18n';
 
 
 export default function Home() {

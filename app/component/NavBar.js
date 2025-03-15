@@ -8,6 +8,7 @@ import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
 import usimage from './image/us.png';
 import chimage from './image/ch.jpg';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -17,7 +18,9 @@ const NavBar = () => {
     const menuRef = useRef(null); 
     const menuButtonRef = useRef(null);
     const [scrolled, setScrolled] = useState(false);
+    const { t } = useTranslation();
     // const [selectedCountry, setSelectedCountry] = useState(countries[0]);
+    
 
 
     const handleClickOutside = (event) => {
@@ -68,21 +71,27 @@ const NavBar = () => {
 
     //   aase
 
-    const [selectedImage, setSelectedImage] = useState(usimage); // Default to the first image
-  const [isOpen, setIsOpen] = useState(false); // State to manage open/close dropdown
+    const { i18n } = useTranslation();
+  const [selectedImage, setSelectedImage] = useState(usimage); 
+  const [isOpen, setIsOpen] = useState(false); 
 
-  const handleSelect = (image) => {
-    setSelectedImage(image); // Update the selected image
-    setIsOpen(false); // Close the dropdown after selecting an option
-  };
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen); // Toggle dropdown visibility
-  };
   const options = [
-    { image: usimage,},
-    { image: chimage,},
+    { image: usimage, langCode: 'en' }, 
+    { image: chimage, langCode: 'zh' }, // Chinese
   ];
+
+  // Function to toggle the dropdown
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Handle language selection
+  const handleSelect = (image, langCode) => {
+    setSelectedImage(image); // Update selected image
+    i18n.changeLanguage(langCode); // Change the language using react-i18next
+    setIsOpen(false); // Close dropdown after selection
+  };
 
 
 
@@ -104,7 +113,9 @@ const NavBar = () => {
                         <LiaBarsSolid className='text-[#000] text-[25px] absolute' />
                     </div>
                 </div>
-                <Link href="/" className='Froggo-Logo text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]'>Extraterrestrial <br/> Artificial Intelligence </Link>
+                <Link href="/" className="Froggo-Logo text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px]">
+                <span dangerouslySetInnerHTML={{ __html: t('extraterrestrialAIa') }} />
+                </Link>
                 <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:right-0 sm:relative duration-1000 z-50 sm:opacity-100 flex justify-between items-start sm:items-center gap-[14px] md:gap-[16px] lg:gap-[18px] xl:gap-[20px] 2xl:gap-[22px] p-[8px] md:p-[12px] xl:p-[16px] sm:bg-transparent bg-[#fff] sm:flex-row flex-col p-[20px] sm:p-[0]
                     ${toggle ? 'right-[10]' :'right-[130%]' }
                     ${toggle ? 'opacity-100' : 'opacity-10'} 
@@ -112,14 +123,11 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#Home" onClick={(e) => handleScroll(e, "Home")}>
                     Home
                     </a>
-                    {/* <a className="Link-manu-bar" href="#about " onClick={(e) => handleScroll(e, "about ")}>
-                    About 
-                    </a> */}
                     <a className="Link-manu-bar" href="#about" onClick={(e) => handleScroll(e, "about")}>
                     About
                     </a>
-                    <a className="Link-manu-bar" href="#Techmap" onClick={(e) => handleScroll(e, "Techmap")}>
-                    Techmap
+                    <a className="Link-manu-bar" href="#Roadmap" onClick={(e) => handleScroll(e, "Roadmap")}>
+                    Roadmap
                     </a>
                     <a className="Link-manu-bar" href="#Tokenomics" onClick={(e) => handleScroll(e, "Tokenomics")}>
                     Tokenomicss
@@ -151,8 +159,8 @@ const NavBar = () => {
                         {isOpen && (
                             <div className="options">
                             {options.map((option, index) => (
-                              <div key={index} onClick={() => handleSelect(option.image)}>
-                                <Image src={option.image} alt={option.alt} className='w-[12px] sm:w-[13px] md:w-[14px] lg:w-[15px] xl:w-[16px] 2xl:w-[20px]' />
+                              <div key={index} onClick={() => handleSelect(option.image, option.langCode)}>
+                                <Image src={option.image} alt={`Flag for ${option.langCode}`} className='w-[12px] sm:w-[13px] md:w-[14px] lg:w-[15px] xl:w-[16px] 2xl:w-[20px]' />
                               </div>
                             ))}
                           </div>

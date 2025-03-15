@@ -6,6 +6,7 @@ import Link from 'next/link';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import backgroundimage from './image/backgronhero.gif';
 
 
 const Footer = () => {
@@ -28,6 +29,8 @@ const Footer = () => {
       }, []);
     return (
         <div className='relative backgroundfooter overflow-hidden sm:section4' id='Staking'>
+          <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
+          <Image src={backgroundimage} alt="Background" objectFit="cover"  className='object-cover w-full h-full absolute top-0 left-0 z-[-3]'/>
             <div className='container mx-auto  mb-[9px] md:pb-[10px] lg:pb-[11px] xl:pb-[12px] 2xl:pb-[13px] pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[72px] sm:px-0 px-[24px]'>
                 <h2 className='footerites text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px]'>Extraterrestrial<br/>
                 Artificial Intelligence</h2>
