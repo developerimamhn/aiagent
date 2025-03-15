@@ -70,7 +70,7 @@ const Pageseven = () => {
         return () => ctx.revert();
       }, []);
     return (
-        <div className='section7 relative' id='FAQ'>
+        <div className='section7 relative -mt-[1]' id='FAQ'>
           <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
           <Image src={backgroundimage} alt="Background" objectFit="cover"  className='object-cover w-full h-full absolute top-0 left-0 z-[-3]'/>
             <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px]'>

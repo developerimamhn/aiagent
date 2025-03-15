@@ -91,7 +91,7 @@ const Pagesix = () => {
         <div className='relative ' id="HowToBuy">
           <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
           <Image src={backgroundimage} alt="Background" objectFit="cover"  className='w-full h-full absolute top-0 left-0 z-[-3]'/>
-            <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px] px-[24px] sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px]'>
+            <div className='container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px]'>
             <div className='relative mt-[20px] sm:mt-[24px] md:mt-[32px] lg:mt-[36px] xl:mt-[40px] 2xl:mt-[50px]'>
                 <h2 className='howtobue text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px] '>How can I get $EXTAI?</h2>
                 <p className=' extalyoull text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] mt-[11px] sm:mt-[12px] md:mt-[13px] lg:mt-[14px] xl:mt-[15px] 2xl:mt-[16px]'>To get $EXTAI, you&apos;ll need a crypto wallet that supports Solana tokens, such as Phantom <br className='xl:block hidden' /> Wallet. Follow these simple steps to acquire $EXTAI during the presale:</p>

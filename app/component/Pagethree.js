@@ -89,10 +89,10 @@ const {t} = useTranslation();
   }, []);
 
     return (
-        <div className='overflow-hidden trasingviewsectionbackground relative py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[100px] !sbodycolor' id='about'>
+        <div className='overflow-hidden trasingviewsectionbackground relative pt-[40px] sm:pt-[50px] md:pt-[70px] lg:pt-[90px] xl:pt-[120px] 2xl:pt-[155px] !sbodycolor' id='about'>
           <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
           <Image src={backgroundimage} alt="Background" objectFit="cover"  className='w-full h-full absolute top-0 left-0 z-[-3]'/>
-            <div className='flex justify-center items-end sm:flex-row flex-col sm:gap-0 gap-[30px]  px-[24px] sm:px-[0] sm:pl-[70px] md:pl-[100px] lg:pl-[120px] xl:pl-[160px] 2xl:pl-[200x]'>
+            <div className='flex justify-center items-center sm:flex-row flex-col sm:gap-0 gap-[30px]  px-[24px] sm:px-[0] sm:pl-[70px] md:pl-[100px] lg:pl-[120px] xl:pl-[160px] 2xl:pl-[200x]'>
                 <div className='flex-1 '>
                     <h2 className=' artfinalelonms text-[25px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[73px]'>{t("greeting")}</h2>
                     <p className=' elonmassdSD text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px]'><p><p>Elon has reshaped entire industries - but what if he&apos;s not just a human visionary? What if he&apos;s an extraterrestrial AI, sent to guide humanity into the future?</p>
