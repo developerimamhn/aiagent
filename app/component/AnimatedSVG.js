@@ -13,14 +13,13 @@ const AnimatedSVG = () => {
   const options = {
     chart: {
       type: 'polarArea',
-      width: 380,
       animations: {
         enabled: isVisible,  // Enable animation only when visible
         easing: 'easeinout',
-        speed: 1000,
+        speed: 2000,
         animateGradually: {
           enabled: true,
-          delay: 100,
+          delay: 200,
         },
       },
     },
@@ -56,12 +55,12 @@ const AnimatedSVG = () => {
     },
     dataLabels: {
       style: {
-        colors: ['#ffffff'], // Set text color to white
+        colors: ['#ffffff'],
       },
     },
   };
 
-  const series = [60, 50, 40, 35, 30];  // Data points
+  const series = [60, 50, 40, 35, 30];
 
   // Set up the Intersection Observer
   useEffect(() => {
@@ -69,7 +68,7 @@ const AnimatedSVG = () => {
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setIsVisible(true);  // Set chart as visible
+          setIsVisible(true); 
         }
       },
       {
@@ -77,20 +76,17 @@ const AnimatedSVG = () => {
       }
     );
 
-    const chartNode = chartRef.current;  // Store the ref in a variable
+    const chartNode = chartRef.current;  // Access the chart element using the ref
     if (chartNode) {
       observer.observe(chartNode);  // Observe the chart element
     }
 
     return () => {
       if (chartNode) {
-        observer.unobserve(chartNode);  // Clean up observer
+        observer.unobserve(chartNode);  // Clean up the observer when the component is unmounted
       }
     };
-  }, []);
-
-  
-
+  }, []); // Empty dependency array ensures this runs only once
 
 
   return (

@@ -130,7 +130,7 @@ const NavBar = () => {
                     Roadmap
                     </a>
                     <a className="Link-manu-bar" href="#Tokenomics" onClick={(e) => handleScroll(e, "Tokenomics")}>
-                    Tokenomicss
+                    Tokenomics
                     </a>
                     <a className="Link-manu-bar" href="#HowToBuy" onClick={(e) => handleScroll(e, "HowToBuy")}>
                     How To Buy
@@ -138,9 +138,9 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#FAQ" onClick={(e) => handleScroll(e, "FAQ")}>
                      FAQ
                     </a>
-                    <a className="Link-manu-bar" href="#staking" onClick={(e) => handleScroll(e, "staking")}>
-                    staking
-                    </a>
+                    <Link href="/stake" className="Link-manu-bar" >
+                        Staking
+                    </Link>
                     <a className="Link-manu-bar" href="#whitepaper" onClick={(e) => handleScroll(e, "whitepaper")}>
                     whitepaper
                     </a>

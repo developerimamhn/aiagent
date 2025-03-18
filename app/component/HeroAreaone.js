@@ -218,10 +218,10 @@ const HeroAreaone = () => {
 
                           <div className='flex items-center justify-center flex-col gap-[8px] md:gap-[12px] xl:gap-[16px] absolute right-0 top-[50%] transform translate-x-1/2 -translate-y-1/2'>
                             <Link href="/">
-                            <button className='buybuttonss w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Buy</button>
+                            <button className='buybuttonss cursor-pointer w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Buy</button>
                             </Link>
                             <Link href="/stake">
-                            <button className='buybuttonssddd w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Stake</button>
+                            <button className='buybuttonssddd cursor-pointer w-[40px] sm:w-[40px] md:w-[48px] lg:w-[64px] xl:w-[96px] 2xl:w-[105px] flex justify-center items-center rounded-[6px] md:rounded-[8px] xl:rounded-[10px] h-[20px] sm:h-[24px] md:h-[32px] lg:h-[36px] xl:h-[40px] 2xl:h-[50px] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px]'>Stake</button>
                             </Link>
                           </div>
                           <div className='flex items-center justify-between'>
