@@ -69,7 +69,7 @@ const Pageone = () => {
 
   }, []);
     return ( 
-        <div className=' relative z-[8] ' id="HowItWorks">
+        <div className=' relative z-[8] !bg-[#D0CFCB]' id="HowItWorks">
             <div className='py-[24px] sm:py-[32px] md:py-[36px] lg:py-[40px] xl:py-[48px] 2xl:py-[69px]'>
               <div className="scroll-container">
                   <div className="scroll-contents gap-[17px] sm:gap-[20px] md:gap-[25px] lg:gap-[30px] xl:gap-[40px] 2xl:gap-[51px]">
